@@ -1,3 +1,4 @@
 # Summary
 
-- [Introduction 1](./intro.md)
+- [Introduction](./intro.md)
+- [Example](./example.md)
