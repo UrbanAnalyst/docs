@@ -1,0 +1,6 @@
+[book]
+authors = ["mpadge"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Urban Analyst"
