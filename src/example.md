@@ -50,3 +50,35 @@ and 1.6, while values in Berlin only range between around 1 and 1.25.
 
 The fact that relative transport in Paris is still better on average than in
 Berlin is thus even more impressive considering this stark difference in scale.
+
+### Combined Absolute
+
+These values combine the absolute transport times with the social index
+transformed to the same scale. This, and the combined relative statistic
+described below, are primarily intended to highlight differences within each
+city visible on the "Maps" page, where interpretation is relatively
+straightforward. Interpretation of city-wide average statistics for these
+combined variables is comparably less insightful, but nevertheless presented
+for the sake of completeness.
+
+This statistic reflects a measure of "bias" in the spatial coupling between
+transport provision and social conditions. Where the average association
+between good transport and social advantage is strong, yet there is weak
+association between poor transport and social disadvantage, combined absolute
+values will be lower than average absolute transport times alone. Such a
+reduction in combined absolute values compared with transport times alone would
+thus reflect a positive "bias" in the coupling between transport and social
+conditions, with good transport associated with good social conditions, but
+poor transport not systematically associated with social disadvantage.
+Conversely, combined values greater than absolute transport times alone would
+reflect a negative "bias", such that poor transport was consistently associated
+with social disadvantage. 
+
+Combined absolute values for Paris are considerably lower than for Berlin, and
+are notably lower than the absolute transport times alone. This indicates that
+the coupling between transport and social conditions in Paris is structurally
+biased towards good transport being provided in areas of relative social
+advantage. Berlin, in contrast, has an average combined absolute value almost
+identical to the absolute transport times, indicating no discernible bias in
+the spatial relationship between transport and social conditions.
+
