@@ -49,7 +49,10 @@ This section describes the five travel variables:
 - Intervals between consecutive services
 - Compound travel statistic
 
-Travel times are compared throughout for two primary modes of transport:
+## Absolute and Relative Travel Times
+
+Urban Analyst enables comparisons of travel times between two primary modes of
+transport:
 
 - *Private Automobile.* Travel times with private automobile are used as a
   benchmark for measures of travel time using other modes. UA generates
@@ -78,6 +81,8 @@ Absolute travel times measure times taken with multi-modal transport, while
 relative travel times are ratios of these values compared with equivalent
 travel times with private automobile.
 
+### Intervals and Numbers of Transfers
+
 In addition to travel times, UA also includes the following two additional
 statistics quantify other aspects of public transport systems. Both are
 measured for every point of origin with a city, both of these are quantified by
@@ -86,16 +91,16 @@ calculating the average value at a distance of 10km. For example, numbers of
 transfers generally increase with distance, and the value chosen represents the
 average number of transfers required at a distance of 10km.
 
-- *Intervals to Next Service,* measured in minutes. For each point of origin in
-  a city, this statistic measures the waiting time necessary before departing
-  to each destination within a city on the service after the one corresponding
-  to the fastest journey. This delayed service may not be fast as the original,
-  or it may even be faster in some cases, as the UA algorithms also prioritise
-  connections with the fewest possible transfers. It can happen that subsequent
-  services are actually faster, yet involve additional transfers not required
-  in the originally identified "fastest" service.
+- *Intervals to Next Service* are measured in minutes. For each point of origin
+  in a city, this statistic measures the waiting time necessary before
+  departing to each destination within a city on the service after the one
+  corresponding to the fastest journey. This delayed service may not be fast as
+  the original, or it may even be faster in some cases, as the UA algorithms
+  also prioritise connections with the fewest possible transfers. It can happen
+  that subsequent services are actually faster, yet involve additional
+  transfers not required in the originally identified "fastest" service.
 
-- *Numbers of Transfers*. This measures the number of transfers necessary for a
+- *Numbers of Transfers* measure the number of transfers necessary for a
   *minimal-transfer* journey out to a distance of 10km. These
   *minimal-transfer* journeys are selected to allow for journeys slightly
   slower than absolute fastest journeys (generally by up to 5 minutes) if they
@@ -104,17 +109,17 @@ average number of transfers required at a distance of 10km.
 ### Compound Travel Statistics
 
 All three of the statistics described above - travel times, intervals, and
-numbers of transfers - are measured such that low values are good, while high
-values are bad. All three are then directly multiplied to generate a "*compound
-travel statistic*". Low values of this statistic reflect only arise in
-locations which have fast travel times, short intervals between services, and
-few transfers. Low values may accordingly always be interpreted as good. In
-contrast, high values may arise through various combinations of variables, from
-extremely high values of one single variable, to less extreme combinations of
-two or three of the variables. It is thus generally not possible to directly
-discern reasons for high values of this compound travel statistic. The UA
-nevertheless provides direct insight into all individual values, as well as all
-pairwise combinations of values, permitting indirect insight.
+numbers of transfers - are measured such that lower values are more desirable.
+All three are then directly multiplied to generate a "*compound travel
+statistic*". Low values of this statistic only arise in locations which have
+fast travel times, short intervals between services, and few transfers. Low
+values may accordingly always be interpreted as good. In contrast, high values
+may arise through various combinations of variables, from extremely high values
+of one single variable, to less extreme combinations of two or three of the
+variables. It is thus generally not possible to directly discern reasons for
+high values of this compound travel statistic. The UA nevertheless provides
+direct insight into all individual values, as well as all pairwise combinations
+of values, permitting indirect insight.
 
 ## Population density
 
@@ -128,11 +133,11 @@ weighting by local population densities.
 
 ## Bicycle infrastructure
 
-The bicycle infrastructure measures the proportion of all possible journeys
-from each point out to a fixed distance of five kilometres that travel along
-dedicated bicycle infrastructure. Travel is calculated using a bicycle-specific
-algorithm that only extends along ways unsuitable for bicycle travel where no
-alternatives exist.
+The bicycle infrastructure variable measures the proportion of all possible
+journeys from each point out to a fixed distance of five kilometres that travel
+along dedicated bicycle infrastructure. Travel is calculated using a
+bicycle-specific algorithm that only extends along ways unsuitable for bicycle
+travel where no alternatives exist.
 
 The weighting scheme used adds total distances for all portions of travel along
 designated cycleways that are separated from vehicular traffic. Portions of
@@ -155,20 +160,28 @@ infrastructure variable, except it quantifies proportions of walking distances
 out to maximal distances of two kilometres that traverse natural spaces. This
 provides a more realistic measure of natural space than simple aggregations of
 areas, because it measures the ability of people to directly walk from every
-point in a city through or alongside nearby natural spaces. The algorithm also
-measures lengths ways walked adjacent to water - so-called "blue space",
-providing a comprehensive metric of the actual ability to access natural spaces
-from every point in a city.
+point in a city through or alongside nearby natural spaces.
+
+Moreover, aggregate metrics do not generally capture the ability of people to
+actually access natural spaces. A park may, for example, have restricted or
+even private access. This would count as a natural space in a simply aggregate
+metric, yet not in UA because access restrictions are taken into account in the
+routing algorithms.
+
+The algorithm also measures lengths ways walked adjacent to water - so-called
+"blue space", providing a comprehensive metric of the actual ability to access
+natural spaces from every point in a city.
 
 ## Parking index
 
 The parking index is the ratio of numbers of nearby parking spaces to total
-volumes of nearby buildings. The parking statistic for each point is calculated
-by adding all nearby parking spaces, with a weighting scheme that decreases
+volumes of nearby buildings. The parking statistic is calculated for each point
+by adding all nearby parking spaces with a weighting scheme that decreases
 exponentially with distance, so that nearby parking spaces count more than
 parking spaces that are farther away. Building volumes are also aggregated
 using an identical weighting scheme. The parking index at each point is then
-the ratio of numbers of parking spaces to total building volumes.
+the ratio of the sum of distance-weighted numbers of parking spaces to the sum
+of distance-weighted total building volumes.
 
 All publicly accessible parking spaces are counted, including on-street
 parking, open parking lots, and multi-level parking garages. Building volumes
