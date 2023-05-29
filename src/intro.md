@@ -1,15 +1,39 @@
 # Introduction
 
-Documentation for [Urban Analyst platform](https://urbananalyst.city),
-providing open source analyses of urban transport systems across the world.
+This is the documentation for [Urban Analyst platform
+(UA)](https://urbananalyst.city), providing open source analyses of urban
+structure and function across the world.
 
-Urban Transport Analyst provides interactive maps of the properties of urban
-transport systems, and relationships of these properties to socio-demographic
-conditions.  UTA also provides statistical summaries of all cities, including
-representation in the "UTA Index", which captures the extent to which transport
-systems effectively counter-balance socio-demographic disadvantage.
+Urban Analyst provides interactive maps of the properties of cities, including
+socio-demographic conditions and the structure and function of transport
+systems. Each property is measured in terms of a "variable". Relationships
+between individual variables are also analysed and presented, such as between
+socio-demographic conditions and frequency of transport services, or between
+distances to nearest schools and access to natural spaces.
 
-## Travel Times and Modes of Transport
+UA also provides statistical summaries of all cities, enabling relationships
+between any pair of variables, such as transport and socio-demographic
+disadvantage, to be compared across all UA cities.
+
+# Variables
+
+## Socio-demographic variables
+
+The extent and structure of each city is defined by its "socio-demographic
+variable." These are taken from open-source datasets provided by the cities as
+a series of geographic areas, defined as polygonal shapes, and some
+corresponding measure of socio-demographic disadvantage. The cities themselves
+decide the resolution and extent of these polygonal data, and with that the
+spatial extent of UA analyses.
+
+These socio-demographic variables are the only aspect that differs between
+different cities. One of the simplest versions is unemployment rate, generally
+measured as a percentage. The UA platform selects the most representative
+measure of general social disadvantage provided by each city, and defaults to
+rates of unemployment only where no more comprehensive of integrative measures
+are openly provided by cities.
+
+## Travel Statistics
 
 Most statistics of the UTA are derived from estimates of times required to
 travel a fixed distance of 10km. This value is chosen to capture the general
