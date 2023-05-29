@@ -8,6 +8,13 @@ which are quantified as proportions between 0 and 1, with higher values
 respectively indicating either greater availability of bicycle infrastructure
 or access to natural spaces.
 
+Variables are measured for every way, path, or street intersection within each
+city, and then aggregated within each polygon described in the following
+sub-section. Unless explicitly described otherwise, values of all variables are
+weighted by population density. This means that, for example, distances to
+nearest schools represent average distances that each person within a given
+polygon must travel to get to school.
+
 ## Socio-demographic variables
 
 The extent and structure of each city is defined by its "socio-demographic
@@ -113,8 +120,56 @@ pairwise combinations of values, permitting indirect insight.
 
 ## Distance to nearest schools
 
+Distances to nearest schools are measured in kilometres, as shortest walking
+distances from each point to the nearest school. These are network distances,
+and not simple straight line distances. A single value is ascribed to each
+point within a city, and all points aggregated within each polygon, after
+weighting by local population densities.
+
 ## Bicycle infrastructure
+
+The bicycle infrastructure measures the proportion of all possible journeys
+from each point out to a fixed distance of five kilometres that travel along
+dedicated bicycle infrastructure. Travel is calculated using a bicycle-specific
+algorithm that only extends along ways unsuitable for bicycle travel where no
+alternatives exist.
+
+The weighting scheme used adds total distances for all portions of travel along
+designated cycleways that are separated from vehicular traffic. Portions of
+trips extending along other types of ways are added with "half weightings" so,
+for example, one kilometre along these types is equivalent to two kilometres on
+dedicated bicycle ways. These "half-weight" ways include residential or
+"living" streets, unpaved tracks, and bicycle lanes directly alongside
+automobile lanes. A third category of ways are weighted at one-quarter,
+including footpaths and general pedestrian areas which permit bicycle travel.
+
+The weighted sums of all distances along these types of ways traversed out to
+five kilometres from any given point are then divided by the sum of all
+distances travelled regardless of way type to give a ratio between zero and
+one. This is the bicycle infrastructure variable.
 
 ## Natural space accessibility
 
+Natural space accessibility is measured in a similar way to the bicycle
+infrastructure variable, except it quantifies proportions of walking distances
+out to maximal distances of two kilometres that traverse natural spaces. This
+provides a more realistic measure of natural space than simple aggregations of
+areas, because it measures the ability of people to directly walk from every
+point in a city through or alongside nearby natural spaces. The algorithm also
+measures lengths ways walked adjacent to water - so-called "blue space",
+providing a comprehensive metric of the actual ability to access natural spaces
+from every point in a city.
+
 ## Parking index
+
+The parking index is the ratio of numbers of nearby parking spaces to total
+volumes of nearby buildings. The parking statistic for each point is calculated
+by adding all nearby parking spaces, with a weighting scheme that decreases
+exponentially with distance, so that nearby parking spaces count more than
+parking spaces that are farther away. Building volumes are also aggregated
+using an identical weighting scheme. The parking index at each point is then
+the ratio of numbers of parking spaces to total building volumes.
+
+All publicly accessible parking spaces are counted, including on-street
+parking, open parking lots, and multi-level parking garages. Building volumes
+are aggregated regardless of type or purpose.
