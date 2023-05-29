@@ -49,7 +49,7 @@ This section describes the five travel variables:
 - Intervals between consecutive services
 - Compound travel statistic
 
-## Absolute and Relative Travel Times
+### Absolute and Relative Travel Times
 
 Urban Analyst enables comparisons of travel times between two primary modes of
 transport:
