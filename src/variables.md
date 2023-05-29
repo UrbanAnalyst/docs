@@ -24,7 +24,7 @@ measure of general social disadvantage provided by each city, and defaults to
 rates of unemployment only where no more comprehensive of integrative measures
 are openly provided by cities.
 
-## Travel Statistics
+## Travel Variables
 
 Urban Analyst provides highly detailed statistics on transport systems. Many of
 these are derived from estimates of times required to travel fixed distances of
@@ -33,6 +33,14 @@ transport systems. Shorter distances do not sufficiently capture the influence
 of transport modes such as express or long-distance train services, while
 longer distances unfairly penalise smaller cities in which most journeys are
 only of shorter distances.
+
+This section describes the five travel variables:
+
+- Absolute travel times
+- Relative travel times
+- Numbers of transfers
+- Intervals between consecutive services
+- Compound travel statistic
 
 Travel times are compared throughout for two primary modes of transport:
 
@@ -58,6 +66,10 @@ Travel times are compared throughout for two primary modes of transport:
   actually be faster), these times will represent the single mode of cycling
   only, but multi-modal times will generally reflect fastest times formed by
   combining multiple modes of transport.
+
+Absolute travel times measure times taken with multi-modal transport, while
+relative travel times are ratios of these values compared with equivalent
+travel times with private automobile.
 
 In addition to travel times, UA also includes the following two additional
 statistics quantify other aspects of public transport systems. Both are
@@ -96,3 +108,13 @@ two or three of the variables. It is thus generally not possible to directly
 discern reasons for high values of this compound travel statistic. The UA
 nevertheless provides direct insight into all individual values, as well as all
 pairwise combinations of values, permitting indirect insight.
+
+## Population density
+
+## Distance to nearest schools
+
+## Bicycle infrastructure
+
+## Natural space accessibility
+
+## Parking index
