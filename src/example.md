@@ -1,84 +1,62 @@
 # Example
 
 This chapter demonstrates most of the capabilities of the [Urban Analyst
-platform](https://urbananalyst.city) by way of an example analysis comparing
-the cities of Paris, France, and Berlin, Germany.
+platform](https://urbananalyst.city) through exploring comparisons between the
+cities of Paris, France, and Berlin, Germany. It is important to remember
+throughout that lower values in all UTA statistics are always better. These
+comparisons are mostly drawn from the "Stats" page, which provides overviews of
+entire cities, and comparisons with all other UTA cities. The "Maps" page can
+then be used to examine the actual spatial distributions of particular
+variables or relationships within any given city.
 
-## Stats page
+This comparison starts by stepping through each variable to describe kinds of
+information able to be extracted, before concluding with a general summary. The
+[Urban Analyst platform](https://urbananalyst.city) currently measures 11
+variables, along with strengths of relationship between all paired combinations
+of these. This amounts to 11 * (11 - 1) / 2 = 55 pairwise combinations. Four of
+these variables quantify aspects of the transport system, and are considered
+together in the following comparisons.
 
-The "Stats" page compares all current UTA cities in terms of a range of
-statistics. Most statistics can be viewed as both "Average" or "Variation"
-values. "Average" means the direct value averaged across a whole city, while
-"Variation" measures the extend to which the chosen variable varies across a
-city. This section will briefly describe what each of the variables, and in
-each of these two forms, reveal about differences between Paris and Berlin.
-It is important to remember throughout that lower values in all UTA statistics
-are always better.
+## Individual Variables.
 
-### Transport Absolute
+### Transport
 
-This variable measures the absolute time (in minutes) required to travel a
-distance of 10km from each point in a city, using any combination of travel
-modes except private automobile (including walking, bicycling, and any
-available public transport options). The "Average" values show that travelling
-10km in Paris takes just under 40 minutes on average, while equivalent journeys
-in Berlin require a bit over one minute more. The equivalent "Variation" values
-also show that absolute travel times in Paris are more consistent, generally
-varying across the city by about 1.7 minutes around the 40 minute average time,
-while travel times in Berlin vary by over 1.8 minutes around the 41 minute
-average time.
+The "Transport Absolute" variable measures the absolute time (in minutes)
+required to travel a distance of 10km from each point in a city, using any
+combination of travel modes except private automobile (including walking,
+bicycling, and any available public transport options). Travelling 10km in
+Paris takes just under 40 minutes on average, while equivalent journeys in
+Berlin require a bit over one minute more.
 
-This layer thus reveals that Paris has a faster and more consistent transport
-system than Berlin.
-
-### Transport Relative
-
-The relative transport values divide the absolute travel times described above
+The "Transport Relative" values divide the absolute travel times described above
 by times for equivalent journeys with private automobile. Ratios of one imply
 automobile times equal to multi-modal times; ratios of less than one imply that
 multi-modal transport is faster than private automobile. Paris and Berlin both
-have comparably low values for this ratio, imply relatively fast multi-modal
-transport, with Paris slightly faster than Berlin, as observed with absolute
-transport times.
+have comparably low values for this ratio, implying relatively fast multi-modal
+transport, with Paris notably faster than Berlin.
 
-The "Variation" values are nevertheless reversed compared with
-equivalent absolute transport values, with Berlin having lower variation than
-Paris. A comparison of these statistics on the "Maps" page reveals that this is
-largely because Paris is simply much larger than Berlin, and the range of
-relative transport values correspondingly greater, ranging between around 0.6
-and 1.6, while values in Berlin only range between around 1 and 1.25.
+All individual variables also enable comparison in terms of "Variation", rather
+than "Average" values. Comparing these reveals that Berlin generally has
+markedly lower variation than Paris. A comparison of these statistics on the
+"Maps" page reveals that this is largely because Paris is simply much larger
+than Berlin, and the ranges of both absolute and relative transport times are
+correspondingly greater. The fact that relative transport in Paris is still
+better on average than in Berlin is thus even more impressive considering this
+stark difference in scale.
 
-The fact that relative transport in Paris is still better on average than in
-Berlin is thus even more impressive considering this stark difference in scale.
+Travelling in Paris requires notably greater numbers of transfers to travel
+equivalent distances than Berlin. The values in the "Number of Transfers" layer
+are for journeys of 10km total distance (including walking or cycling distances
+at either end). Travelling in Paris requires > 50% more transfers than journeys
+in Berlin.
 
-### Combined Absolute
+The fourth transport variable, "Interval", measures the time to wait (in
+minutes) until the next equivalent service. Intervals in Paris are slightly
+under 5 minutes, whereas values in Berlin are just under 7 minutes.
 
-These values combine the absolute transport times with the social index
-transformed to the same scale. This, and the combined relative statistic
-described below, are primarily intended to highlight differences within each
-city visible on the "Maps" page, where interpretation is relatively
-straightforward. Interpretation of city-wide average statistics for these
-combined variables is comparably less insightful, but nevertheless presented
-for the sake of completeness.
-
-This statistic reflects a measure of "bias" in the spatial coupling between
-transport provision and social conditions. Where the average association
-between good transport and social advantage is strong, yet there is weak
-association between poor transport and social disadvantage, combined absolute
-values will be lower than average absolute transport times alone. Such a
-reduction in combined absolute values compared with transport times alone would
-thus reflect a positive "bias" in the coupling between transport and social
-conditions, with good transport associated with good social conditions, but
-poor transport not systematically associated with social disadvantage.
-Conversely, combined values greater than absolute transport times alone would
-reflect a negative "bias", such that poor transport was consistently associated
-with social disadvantage. 
-
-Combined absolute values for Paris are considerably lower than for Berlin, and
-are notably lower than the absolute transport times alone. This indicates that
-the coupling between transport and social conditions in Paris is structurally
-biased towards good transport being provided in areas of relative social
-advantage. Berlin, in contrast, has an average combined absolute value almost
-identical to the absolute transport times, indicating no discernible bias in
-the spatial relationship between transport and social conditions.
+Finally, the "Compound Transport" variable simply multiplies absolute travel
+times by numbers of transfers by intervals. Low values of this statistic
+reflect fast and frequent transport with few transfers. Because of the
+relatively high numbers of transfers necessary in Paris, it has a considerably
+higher value of this statistic than Berlin.
 
