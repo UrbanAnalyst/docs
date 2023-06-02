@@ -7,11 +7,11 @@ throughout that lower values in all UTA statistics are always better. Values
 are also weighted by local population densities. This is important because, for
 example, public transport systems should be constructed to offer the fastest
 services to the areas where most people live. Not implementing this weighting
-would, in contrast, leave measures in some form of times per unit area,
-weighting times from unpopulated parts of a city equally to times from very
-densely populated parts. Weighting by population density effectively converts,
-for example, transport times to the times averaged across each person in a
-city.
+would, in contrast, leave measures in some form of times per unit area, so that
+for example travel times from unpopulated parts of a city would be weighted
+equally to times from very densely populated parts. Weighting travel times by
+population density effectively converts, them to times averaged across each
+person in a city, with the same argument applying to all other variables.
 
 The comparisons in this chapter between Paris and Berlin are mostly drawn from
 the "Stats" page, which provides overviews of entire cities, and comparisons
@@ -20,17 +20,18 @@ actual spatial distributions of particular variables or relationships within
 any given city.
 
 This comparison starts by stepping through each variable to describe kinds of
-information able to be extracted, before concluding with a general summary. The
-[Urban Analyst platform](https://urbananalyst.city) currently measures 11
-variables, along with strengths of relationship between all paired combinations
-of these. This amounts to 11 * (11 - 1) / 2 = 55 pairwise combinations. Four of
-these variables quantify aspects of the transport system, and are considered
-together in the following comparisons.
+information able to be extracted, before examining pairwise relationships
+between these variables, and concluding with a general summary. The [Urban
+Analyst platform](https://urbananalyst.city) currently measures 11 variables,
+along with strengths of relationship between all paired combinations of these.
+This amounts to 11 * (11 - 1) / 2 = 55 pairwise combinations. Strengths of
+relationship are standardised, so are comparable throughout between all pairs
+of variables, and between different cities.
 
 ## Individual Variables.
 
-The following table summarises the values of the individual
-variables for each city.
+The following table summarises the values of the individual variables for each
+city (each measured on its own distinct scale).
 
 | Variable | Berlin | Paris |
 |:----:|:---------|:---------|
@@ -241,3 +242,68 @@ disadvantage is strongly associated with high numbers of automobile parking
 spaces, or conversely that socially disadvantaged parts of the city offer
 relatively few automobile parking spaces. The relationship in Berlin is, in
 contrast, slightly positive.
+
+## Conclusions
+
+### Lessons for Berlin
+
+Paris's transport system is considerably faster and more frequent.
+Nevertheless, it also involves greater numbers of transfers, suggesting that
+any attempt to improve the system in Berlin should take care to avoid
+inadvertently increasing numbers of transfers.
+
+Berlin's average relative speed is also notably higher than Paris's, and at
+1.09 likely too high to effectively discourage large numbers of people from
+opting to travel via private automobile. Examination of the map of relative
+travel times clearly reveals the effect of the connected ring out autobahns
+encircling the city. While reducing speeds on these carriageways may not be
+feasible, a uniform 30km/hour limit as introduced in Paris may nevertheless
+significantly reduce this ratio, and further incentivise many more people to
+opt for public transport rather than private automobile.
+
+Although Paris is a far larger city, its average population density is
+nevertheless very similar to Berlin's. It is then even more striking that Paris
+offers considerably shorter average distances to schools than Berlin. School
+distances in Berlin are also only weakly correlated with social conditions,
+whereas average distances to schools in Paris are shorter in less socially
+advantaged areas. Both of these factors indicate a need in Berlin for more
+provision of local schooling in general, and particularly in socially
+disadvantaged regions, if it is to match the educational opportunities provided
+in Paris. 
+
+Paris's bicycle infrastructure is considerably better than Berlin's, and
+perhaps even more importantly, becomes better towards the inner city regions.
+In contrast, Berlin really only offers good bicycle infrastructure in the
+relatively peripheral, and more affluent, outer regions. Berlin really needs to
+proactively focus on improving bicycle infrastructure in the inner city
+regions.
+
+Berlin is fortunately greatly enhanced by an abundance of natural space,
+including access to the city's rivers and canals, and access to these natural
+spaces is only weakly related to social advantage. This provides robust
+evidence for Berlin to appreciate its natural spaces, and to ensure that the
+remain accessible for everybody.
+
+### Lessons for Paris
+
+Paris's transport system is notably better than Berlin's in almost all ways
+except for the number of transfers necessary to travel equivalent distances.
+This difference is especially notable given that Paris is much larger than
+Berlin. Improvements to Paris's public transport system should focus on
+decreasing numbers of transfers.
+
+Paris's average relative speed is very close to the "magical" value of one, at
+which point private automobiles are no faster than multi-modal transport
+including walking and cycling.
+
+Paris has done a great job of providing bicycle infrastructure in the inner
+city regions, and notably of proactively creating bicycle infrastructure in
+regions of social disadvantage.
+
+Contrasts with Berlin nevertheless emphasise a couple of aspects which Paris
+could focus on improving. The most notable of these is the index of
+accessibility to natural spaces, and the relationship of this to other
+variables. Paris simply has far less natural space than Berlin, and much poorer
+general accessibility. Moreover, access to natural spaces is positively
+associated with social advantage, so that it is relatively difficult for
+socially disadvantaged Parisians to access natural spaces.
