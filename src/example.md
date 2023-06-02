@@ -3,11 +3,21 @@
 This chapter demonstrates most of the capabilities of the [Urban Analyst
 platform](https://urbananalyst.city) through exploring comparisons between the
 cities of Paris, France, and Berlin, Germany. It is important to remember
-throughout that lower values in all UTA statistics are always better. These
-comparisons are mostly drawn from the "Stats" page, which provides overviews of
-entire cities, and comparisons with all other UTA cities. The "Maps" page can
-then be used to examine the actual spatial distributions of particular
-variables or relationships within any given city.
+throughout that lower values in all UTA statistics are always better. Values
+are also weighted by local population densities. This is important because, for
+example, public transport systems should be constructed to offer the fastest
+services to the areas where most people live. Not implementing this weighting
+would, in contrast, leave measures in some form of times per unit area,
+weighting times from unpopulated parts of a city equally to times from very
+densely populated parts. Weighting by population density effectively converts,
+for example, transport times to the times averaged across each person in a
+city.
+
+The comparisons in this chapter between Paris and Berlin are mostly drawn from
+the "Stats" page, which provides overviews of entire cities, and comparisons
+with all other UTA cities. The "Maps" page can then be used to examine the
+actual spatial distributions of particular variables or relationships within
+any given city.
 
 This comparison starts by stepping through each variable to describe kinds of
 information able to be extracted, before concluding with a general summary. The
@@ -60,3 +70,27 @@ reflect fast and frequent transport with few transfers. Because of the
 relatively high numbers of transfers necessary in Paris, it has a considerably
 higher value of this statistic than Berlin.
 
+### Other Variables
+
+- "School Distance": Paris has notably shorter distances from each point in the
+  city to the nearest school than does Berlin.
+- "Bicycle Index": Paris has very notably better bicycle infrastructure than
+  Berlin. This index is simply one minus the average portion of all bicycle
+  journeys out to 5km from each point which may be taken on dedicated bicycle
+  infrastructure. Around one quarter of all bicycle journeys in Paris may be
+  taken along dedicated bicycle ways, compared to less than one fifth in
+  Berlin. Moreover, comparing the maps for this variable reveal that the
+  bicycle infrastructure in Berlin generally improves with distance away from
+  the city centre, whereas Paris has the best bicycle infrastructure
+  concentrated towards the centre of the city.
+- "Nature Index": Access to natural spaces in the two cities is effectively the
+  opposite of the bicycle index. Paris provides relative little
+  access to natural spaces for anybody not close to one of the two huge parks
+  in the city, whereas Berlin provides an abundance of generally smaller
+  natural spaces dispersed throughout the city. Note that natural space access
+  includes walks alongside water bodies. Both cities include dominant rivers,
+  yet Berlin also provides greater pedestrian access to the banks of its river
+  and canals.
+- "Parking": Finally, both Paris and Berlin offer relatively little opportunity
+  to park private automobiles compared with the other UTA cities, with Berlin
+  slightly less than Paris.
