@@ -29,21 +29,40 @@ together in the following comparisons.
 
 ## Individual Variables.
 
+The following table summarises the values of the individual
+variables for each city.
+
+| Variable | Berlin | Paris |
+|:----:|:---------|:---------|
+| Times (abs; min) | 40.9 | 39.5 |
+| Times (rel) | 1.09 | 1.03 |
+| Num. Transfers | 0.9 | 1.5 |
+| Intervals (min) | 6.9 | 4.9 |
+| Transport | 30.1 | 36.6 |
+| Pop. Dens. | 3 | 3 |
+| School Dist (km) | 2.2 | 1.5 |
+| Bike Index | 0.81 | 0.76 |
+| Nature Index | 0.88 | 0.93 |
+| Parking | 1.32 | 1.55 |
+
 ### Transport
 
 The "Transport Absolute" variable measures the absolute time (in minutes)
 required to travel a distance of 10km from each point in a city, using any
 combination of travel modes except private automobile (including walking,
 bicycling, and any available public transport options). Travelling 10km in
-Paris takes just under 40 minutes on average, while equivalent journeys in
-Berlin require a bit over one minute more.
+Paris takes under 40 minutes on average, while equivalent journeys in
+Berlin require almost 1.5 minutes more.
 
 The "Transport Relative" values divide the absolute travel times described above
 by times for equivalent journeys with private automobile. Ratios of one imply
 automobile times equal to multi-modal times; ratios of less than one imply that
 multi-modal transport is faster than private automobile. Paris and Berlin both
 have comparably low values for this ratio, implying relatively fast multi-modal
-transport, with Paris notably faster than Berlin.
+transport, with Paris notably faster than Berlin. This is likely influenced by
+Paris's recent introduction of a uniform maximum speed limits of 30km/hour
+through the city, whereas Berlin features a number of "autobahns" with much
+higher speed limits.
 
 All individual variables also enable comparison in terms of "Variation", rather
 than "Average" values. Comparing these reveals that Berlin generally has
@@ -93,4 +112,132 @@ higher value of this statistic than Berlin.
   and canals.
 - "Parking": Finally, both Paris and Berlin offer relatively little opportunity
   to park private automobiles compared with the other UTA cities, with Berlin
-  slightly less than Paris.
+  notably less than Paris.
+
+## Relationships between variables
+
+This section considers relationships between each individual variable and all
+other variables. The first section thus considers relationships between
+absolute transport times and all 10 other variables; the second then considers
+relationships with the 9 remaining variables not previously considered, and so
+on.
+
+All strengths of relationship shown in the "Stats" page are assessed in
+standardised ways, so they may be directly compared between cities. Moreover,
+the scales shown in the "Stats" page may also be directly compared. Values of
+one or greater indicate very strong relationships, whereas values less than 0.1
+or so indicate weak relationships, and values less than around 0.01 should
+generally be interpret to indicate no relationship. Pairs of variables with
+very weak or negligible strengths of relationship are generally not interpreted
+in the following sub-sections.
+
+The following table summarises the values of the strongest pairwise
+relationships for each city:
+
+| Variable1 | Variable2 | Berlin | Paris |
+|:------:|:----:|:---------|:---------|
+| Times (abs) | Bike |  1.0 |  2.0 |
+| Times (abs) | Natural |  -1.0 |  -0.5 |
+| Times (abs) | Parking |  0 |  -0.15 |
+| Times (abs) | Pop. Dens. |  -0.15 |  -0.11 |
+| Times (abs) | School dist |  0.12 |  0.06 |
+| Times (abs) | Transfers |  -0.31 |  -0.48 |
+| Times (rel) | Bike |  0 |  0.16 |
+| | | |
+| Transport | Natural |  -0.22 |  2.46 |
+| Transport | Parking |  1.7 |  1.9 |
+| | | |
+| School dist | Bike | 0  |  0.4 |
+| School dist | Natural |  -0.12 |  -0.06 |
+| | | |
+| Social | Bike |  0.52 |  -0.38 |
+| Social | Natural |  -0.1 |  2.0 |
+| Social | Parking |  0.04 |  -2.18 |
+| Social | School dist |  -0.05 |  -0.25 |
+
+
+### Transport Variables
+
+This sub-section only considers transport times, both in absolute and relative
+sense. The other transport variables, of intervals and numbers of transfers,
+generally follow similar patterns and are not explicitly considered here.
+
+Relative transport times are ratios of absolute times with multi-modal
+transport compared with equivalents times with private automobiles. This
+variable is only very weakly related to most others. In contrast, absolute
+transport times are strongly related to most other variables.
+
+Relative transport times are negligibly associated with population densities,
+while absolute times are particularly strongly and negatively correlated. These
+negative relationships indicate that faster transport is associated with higher
+population densities, more so in Berlin than Paris.
+
+Slightly weaker relationships are manifest between absolute travel times and
+distances to nearest schools. Relationships in both Berlin and Paris are
+positive, indicating that fast public transport is positively associated with
+shorter distances to schools, with the relationship about twice as strong in
+Berlin as in Paris.
+
+Travel times are very strongly, and positively, correlated with bicycle
+infrastructure, indicating faster travel times in regions with better bicycle
+infrastructure. This relationship is much stronger in Paris than in Berlin, for
+reasons easy to discern by looking at the maps of Berlin for these two
+variables. Bicycle infrastructure there is much better in the periphery of the
+city, whereas transport times exhibit more of a systematic discrepancy between
+the east (fast) and west (slow) portions of the city. In Paris, in contrast,
+faster transport times and better bicycle infrastructure are both concentrated
+more towards the centre of the city.
+
+Relationships between transport times and the index of accessibility to natural
+spaces are also very strong, and negative. This means that faster transport
+times are associated with lower accessibility to natural spaces, as might be
+generally expected of most high-density cities. The relationship is stronger in
+Berlin than Paris, indicating that faster transport times are most strongly
+associated with poorer access to natural spaces there than in Paris.
+
+Finally, absolute transport times are slightly negatively associated with
+numbers of automobile parking spaces in Paris, whereas there is no relationship
+in Berlin. This negative relationship indicates that regions with faster public
+transport also tend to have more automobile parking spaces, reflecting planning
+decisions that associate use of public transport with the driving of private
+automobiles. No such relationship appears to exist in Berlin.
+
+### Non-Transport Variables
+
+Shorter school distances are positively associated with the bicycle index in
+Paris, indicating a positive association between good bicycle infrastructure
+and short distances to schools. Berlin manifests no such relationship, likely
+for reasons described above, that bicycle infrastructure in Berlin is generally
+more peripheral than in Paris.
+
+Although much weaker, relationships between schools distances and the index of
+accessibility to natural spaces are negative, indicating that locations closer
+to schools are further from nature, and more so in Berlin than in Paris.
+
+Finally, the social variables are more strongly related to all other
+non-transport variables in Paris than in Berlin, except for with the index of
+bicycle infrastructure. This variable is more strongly, and positively,
+correlated with the social indicator in Berlin than in Paris, where the
+relationship is negative. The positive relationship in Berlin indicates that
+the provision of bicycle infrastructure is positively associated with social
+advantage, an effect again readily seen in examining the map of Berlin. In
+contrast, Paris is more effective in providing bicycle infrastructure in areas
+of relative social disadvantage.
+
+Paris also seems to be more effective in educational provision in areas of
+social disadvantage, with the strong negative correlation indicating that
+socially disadvantaged Parisians generally have to travel shorter distances to
+schools. Although this relationship is also negative in Berlin, it is much
+weaker.
+
+In contrast, Paris's very strong and positive relationship between social
+advantage and access to natural spaces indicates the relatively far greater
+difficulty experienced by less socially advantaged Parisians in accessing
+natural spaces compared with equivalent inhabitants of Berlin.
+
+Finally, Paris manifests a very strong and negative association between social
+advantage and numbers of automobile parking spaces, indicating that low social
+disadvantage is strongly associated with high numbers of automobile parking
+spaces, or conversely that socially disadvantaged parts of the city offer
+relatively few automobile parking spaces. The relationship in Berlin is, in
+contrast, slightly positive.
