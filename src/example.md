@@ -9,9 +9,9 @@ example, public transport systems should be constructed to offer the fastest
 services to the areas where most people live. Not implementing this weighting
 would, in contrast, leave measures in some form of times per unit area, so that
 for example travel times from unpopulated parts of a city would be weighted
-equally to times from very densely populated parts. Weighting travel times by
-population density effectively converts, them to times averaged across each
-person in a city, with the same argument applying to all other variables.
+equally to times from densely populated parts. Weighting travel times, and all
+other UTA variables, by population density converts them to values as
+experienced on average by each person in a city.
 
 The comparisons in this chapter between Paris and Berlin are mostly drawn from
 the "Stats" page, which provides overviews of entire cities, and comparisons
@@ -50,8 +50,8 @@ city (each measured on its own distinct scale).
 
 The "Transport Absolute" variable measures the absolute time (in minutes)
 required to travel a distance of 10km from each point in a city, using any
-combination of travel modes except private automobile (including walking,
-bicycling, and any available public transport options). Travelling 10km in
+combination of travel modes except private automobile, including walking,
+bicycling, and any available public transport options. Travelling 10km in
 Paris takes under 40 minutes on average, while equivalent journeys in
 Berlin require almost 1.5 minutes more.
 
@@ -64,6 +64,12 @@ transport, with Paris notably faster than Berlin. This is likely influenced by
 Paris's recent introduction of a uniform maximum speed limits of 30km/hour
 through the city, whereas Berlin features a number of "autobahns" with much
 higher speed limits.
+
+(Note that travel times with private automobiles include estimates of times
+required to park a vehicle and ultimately walk to any desired destination.
+Vehicular times calculated here are thus notably longer than with most
+commercial routing engines, which give vehicular travel times only, and ignore
+the critical need to park a vehicle and walk to a destination.)
 
 All individual variables also enable comparison in terms of "Variation", rather
 than "Average" values. Comparing these reveals that Berlin generally has
@@ -104,13 +110,16 @@ higher value of this statistic than Berlin.
   the city centre, whereas Paris has the best bicycle infrastructure
   concentrated towards the centre of the city.
 - "Nature Index": Access to natural spaces in the two cities is effectively the
-  opposite of the bicycle index. Paris provides relative little
+  opposite of the bicycle index. Paris provides relatively little
   access to natural spaces for anybody not close to one of the two huge parks
   in the city, whereas Berlin provides an abundance of generally smaller
   natural spaces dispersed throughout the city. Note that natural space access
   includes walks alongside water bodies. Both cities include dominant rivers,
-  yet Berlin also provides greater pedestrian access to the banks of its river
-  and canals.
+  yet Berlin also provides greater pedestrian access to the banks of its rivers
+  and canals. Comparison of this layer on the maps reveals the comparably
+  greater access in Berlin to walking paths alongside canals and rivers,
+  whereas most of the Seine in Paris is effectively inaccessible to
+  pedestrians.
 - "Parking": Finally, both Paris and Berlin offer relatively little opportunity
   to park private automobiles compared with the other UTA cities, with Berlin
   notably less than Paris.
@@ -118,19 +127,14 @@ higher value of this statistic than Berlin.
 ## Relationships between variables
 
 This section considers relationships between each individual variable and all
-other variables. The first section thus considers relationships between
-absolute transport times and all 10 other variables; the second then considers
-relationships with the 9 remaining variables not previously considered, and so
-on.
-
-All strengths of relationship shown in the "Stats" page are assessed in
-standardised ways, so they may be directly compared between cities. Moreover,
-the scales shown in the "Stats" page may also be directly compared. Values of
-one or greater indicate very strong relationships, whereas values less than 0.1
-or so indicate weak relationships, and values less than around 0.01 should
-generally be interpret to indicate no relationship. Pairs of variables with
-very weak or negligible strengths of relationship are generally not interpreted
-in the following sub-sections.
+other variables. All strengths of relationship shown in the "Stats" page are
+assessed in standardised ways, so they may be directly compared between cities.
+Moreover, the scales shown in the "Stats" page may also be directly compared.
+Values of one or greater indicate very strong relationships, whereas values
+less than 0.1 or so indicate weak relationships, and values less than around
+0.01 should generally be interpret to indicate no relationship. Pairs of
+variables with very weak or negligible strengths of relationship are generally
+not interpreted in the following sub-sections.
 
 The following table summarises the values of the strongest pairwise
 relationships for each city:
@@ -162,11 +166,9 @@ relationships for each city:
 This sub-section only considers transport times, both in absolute and relative
 sense. The other transport variables, of intervals and numbers of transfers,
 generally follow similar patterns and are not explicitly considered here.
-
-Relative transport times are ratios of absolute times with multi-modal
-transport compared with equivalents times with private automobiles. This
-variable is only very weakly related to most others. In contrast, absolute
-transport times are strongly related to most other variables.
+Relative transport times are only very weakly related to most other variables.
+In contrast, absolute transport times are strongly related to most other
+variables.
 
 Relative transport times are negligibly associated with population densities,
 while absolute times are particularly strongly and negatively correlated. These
