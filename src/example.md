@@ -283,7 +283,7 @@ regions.
 Berlin is fortunately greatly enhanced by an abundance of natural space,
 including access to the city's rivers and canals, and access to these natural
 spaces is only weakly related to social advantage. This provides robust
-evidence for Berlin to appreciate its natural spaces, and to ensure that the
+evidence for Berlin to appreciate its natural spaces, and to ensure that they
 remain accessible for everybody.
 
 ### Lessons for Paris
@@ -299,8 +299,8 @@ which point private automobiles are no faster than multi-modal transport
 including walking and cycling.
 
 Paris has done a great job of providing bicycle infrastructure in the inner
-city regions, and notably of proactively creating bicycle infrastructure in
-regions of social disadvantage.
+city regions, and notably of proactively enhancing or creating bicycle
+infrastructure in regions of social disadvantage.
 
 Contrasts with Berlin nevertheless emphasise a couple of aspects which Paris
 could focus on improving. The most notable of these is the index of
