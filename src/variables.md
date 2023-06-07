@@ -1,19 +1,23 @@
 # Variables
 
-Almost all UA variables are measured such that lower or negative values are
-good, whereas higher values are bad. For example, unemployment or transport
-times are both better when values are lower. The only exceptions to this are
-the indices of bicycle infrastructure and access to natural spaces, both of
-which are quantified as proportions between 0 and 1, with higher values
-respectively indicating either greater availability of bicycle infrastructure
-or access to natural spaces.
+All UA variables are measured such that lower or negative values are good,
+whereas higher values are bad. For example, unemployment or transport times are
+both better when values are lower. Indices
+of bicycle infrastructure and access to natural spaces are also transformed so
+that lower values indicate better or more of either. In these cases, the
+transformations are simply one minus the respective proportions of journeys out
+to fixed distance travelled along bicycle infrastructure, or through or
+alongside natural spaces. Values of 0 then reflect 100% of all journeys spent
+on bicycle infrastructure or in natural spaces, while values of 1 would
+represent complete absence of either bicycle infrastructure or natural spaces.
 
 Variables are measured for every way, path, or street intersection within each
-city, and then aggregated within each polygon described in the following
-sub-section. Unless explicitly described otherwise, values of all variables are
-weighted by population density. This means that, for example, distances to
-nearest schools represent average distances that each person within a given
-polygon must travel to get to school.
+city. Values for the maps are aggregated within polygons defined by the
+*Socio-demographic variables* described in the following sub-section, while
+values within the statistics page are aggregated across entire cities. Unless
+explicitly described otherwise, values of all variables are weighted by
+population density. This means that, for example, distances to nearest schools
+represent average distances that each person must travel to get to school.
 
 ## Socio-demographic variables
 
@@ -21,15 +25,17 @@ The extent and structure of each city is defined by its "socio-demographic
 variable." These are taken from open-source datasets provided by the cities as
 a series of geographic areas, defined as polygonal shapes, and some
 corresponding measure of socio-demographic disadvantage. The cities themselves
-decide the resolution and extent of these polygonal data, and with that the
-spatial extent of UA analyses.
+decide the resolution and extent of these polygonal data. These polygons then
+define the extent and shape of cities analysed in Urban Analyst, and the
+individual polygons into which the map data are aggregated.
 
-These socio-demographic variables are the only aspect that differs between
-different cities. One of the simplest versions is unemployment rate, generally
-measured as a percentage. The UA platform selects the most representative
-measure of general social disadvantage provided by each city, and defaults to
-rates of unemployment only where no more comprehensive of integrative measures
-are openly provided by cities.
+Values of these socio-demographic variables are the only aspect that differs
+between different cities. One of the simplest versions is unemployment rate,
+generally measured either as a percentage (0-100), or a proportion (0-1). The
+UA platform selects the most representative measure of general social
+disadvantage provided by each city, and defaults to rates of unemployment only
+where no more comprehensive of integrative measures are openly provided by
+cities.
 
 ## Travel Variables
 
@@ -41,7 +47,17 @@ of transport modes such as express or long-distance train services, while
 longer distances unfairly penalise smaller cities in which most journeys are
 only of shorter distances.
 
-This section describes the five travel variables:
+Values at this distance of 10km are obtained by following these three steps,
+taking the example statistic of travel times:
+
+1. Calculate total travel times from all street intersections to all other
+   street intersections within a city.
+2. Calculate a straight line of "best fit" (a "least squares regression" line)
+   which describes how travel times vary with distance.
+3. Use that line to obtain the "average" value of travel time at the distance
+   of 10km.
+
+The remainder of this section describes the five travel variables:
 
 - Absolute travel times
 - Relative travel times
@@ -57,7 +73,9 @@ transport:
 - *Private Automobile.* Travel times with private automobile are used as a
   benchmark for measures of travel time using other modes. UA generates
   realistic estimates of private automobile travel times through scaling to
-  empirically observed data on actual vehicular travel times. Importantly, UA
+  empirically observed data on actual vehicular travel times. (Calibration
+  procedures are implemented and documented in [this GitHub
+  repository](https://github.com/UrbanAnalyst/ttcalib).) Importantly, UA
   includes an additional, unique aspect of automobile travel times not
   quantified in any other equivalent system, through an algorithm to accurately
   estimate the likely time required to park a private vehicle, and then to walk
@@ -77,19 +95,19 @@ transport:
   only, but multi-modal times will generally reflect fastest times formed by
   combining multiple modes of transport.
 
-Absolute travel times measure times taken with multi-modal transport, while
-relative travel times are ratios of these values compared with equivalent
+In short, absolute travel times measure times taken with multi-modal transport,
+while relative travel times are ratios of these values compared with equivalent
 travel times with private automobile.
 
 ### Intervals and Numbers of Transfers
 
 In addition to travel times, UA also includes the following two additional
-statistics quantify other aspects of public transport systems. Both are
-measured for every point of origin with a city, both of these are quantified by
-measuring values for connections to every other location in the city, and by
-calculating the average value at a distance of 10km. For example, numbers of
-transfers generally increase with distance, and the value chosen represents the
-average number of transfers required at a distance of 10km.
+statistics quantifying other aspects of public transport systems. Both are
+measured for every point of origin with a city, with final values again derived
+by following the steps described above to obtain average values of each for all
+trips of 10km distance. Numbers of transfers are thus the average number
+required for all journeys of 10km, while intervals are the required waiting
+times for the next equivalent journey out to that distance.
 
 - *Intervals to Next Service* are measured in minutes. For each point of origin
   in a city, this statistic measures the waiting time necessary before
@@ -106,52 +124,63 @@ average number of transfers required at a distance of 10km.
   slower than absolute fastest journeys (generally by up to 5 minutes) if they
   involve fewer transfers.
 
-### Compound Travel Statistics
+### The Compound Travel Statistic
 
 All three of the statistics described above - travel times, intervals, and
 numbers of transfers - are measured such that lower values are more desirable.
 All three are then directly multiplied to generate a "*compound travel
 statistic*". Low values of this statistic only arise in locations which have
 fast travel times, short intervals between services, and few transfers. Low
-values may accordingly always be interpreted as good. In contrast, high values
-may arise through various combinations of variables, from extremely high values
-of one single variable, to less extreme combinations of two or three of the
-variables. It is thus generally not possible to directly discern reasons for
-high values of this compound travel statistic. The UA nevertheless provides
-direct insight into all individual values, as well as all pairwise combinations
-of values, permitting indirect insight.
+values may accordingly always be interpreted as indicating overall good
+transport services. In contrast, high values may arise through various
+combinations of variables, from extremely high values of one single variable,
+to less extreme combinations of two or three of the variables. It is thus
+generally not possible to directly discern reasons for high values of this
+compound travel statistic. Urban Analyst nevertheless provides direct insight
+into all individual values, as well as all pairwise combinations of values,
+permitting indirect insight.
 
 ## Population density
+
+Population density values are taken directly from the [European Union *Global
+Human Settlement Layer*](https://ghsl.jrc.ec.europa.eu/index.php) data,
+aggregated into polygons for maps, or across entire cities for statistics.
 
 ## Distance to nearest schools
 
 Distances to nearest schools are measured in kilometres, as shortest walking
 distances from each point to the nearest school. These are network distances,
 and not simple straight line distances. A single value is ascribed to each
-point within a city, and all points aggregated within each polygon, after
-weighting by local population densities.
+point within a city, and all points aggregated after weighting by local
+population densities.
 
 ## Bicycle infrastructure
 
-The bicycle infrastructure variable measures the proportion of all possible
-journeys from each point out to a fixed distance of five kilometres that travel
-along dedicated bicycle infrastructure. Travel is calculated using a
-bicycle-specific algorithm that only extends along ways unsuitable for bicycle
-travel where no alternatives exist.
+The bicycle infrastructure index is derived from a measure of the proportion of
+all possible journeys from each point out to a fixed distance of five
+kilometres that travel along dedicated bicycle infrastructure. To confirm with
+all other UA variables, the index is one minus this proportion, so that low
+values reflect high proportions of bicycle infrastructure. Values of zero would
+then reflect all journeys taken along dedicated bicycle paths, while values of
+one would mean a complete absence of dedicated bicycle infrastructure.
 
-The weighting scheme used adds total distances for all portions of travel along
-designated cycleways that are separated from vehicular traffic. Portions of
-trips extending along other types of ways are added with "half weightings" so,
-for example, one kilometre along these types is equivalent to two kilometres on
+Travel is calculated using a bicycle-specific algorithm that only extends along
+ways unsuitable for bicycle travel where no alternatives exist. The weighting
+scheme used adds total distances for all portions of travel along designated
+cycleways that are separated from vehicular traffic. Portions of trips
+extending along other types of ways are added with "half weightings" so, for
+example, one kilometre along these types is equivalent to two kilometres on
 dedicated bicycle ways. These "half-weight" ways include residential or
 "living" streets, unpaved tracks, and bicycle lanes directly alongside
 automobile lanes. A third category of ways are weighted at one-quarter,
 including footpaths and general pedestrian areas which permit bicycle travel.
+The precise weighting scheme can be viewed in [this source code
+file](https://github.com/UrbanAnalyst/ua-engine/blob/main/R/bicycle-infrastructure.R).
 
 The weighted sums of all distances along these types of ways traversed out to
 five kilometres from any given point are then divided by the sum of all
 distances travelled regardless of way type to give a ratio between zero and
-one. This is the bicycle infrastructure variable.
+one. This bicycle infrastructure index is then one minus this value.
 
 ## Natural space accessibility
 
@@ -170,7 +199,9 @@ routing algorithms.
 
 The algorithm also measures lengths ways walked adjacent to water - so-called
 "blue space", providing a comprehensive metric of the actual ability to access
-natural spaces from every point in a city.
+natural spaces from every point in a city. A natural space index of zero would
+represent an entire city of natural space, with no built structures at all,
+while a value of one would represent a complete absence of natural spaces.
 
 ## Parking index
 
