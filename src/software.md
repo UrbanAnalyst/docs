@@ -5,13 +5,13 @@ The primary software used to generate the results presented on [Urban Analyst](h
 - [`osmdata`](https://docs.ropensci.org/osmdata) for accessing and processing
   data from Open Street Map.
 
-- [`dodgr`](https://atfutures.github.io/dodgr) for general network routing queries.
+- [`dodgr`](https://UrbanAnalyst.github.io/dodgr) for general network routing queries.
 
-- [`gtfsrouter`](https://atfutures.github.io/gtfs-router) for public transport routine queries.
+- [`gtfsrouter`](https://UrbanAnalyst.github.io/gtfsrouter) for public transport routine queries.
 
-- [`m4ra`](https://atfutures.github.io/m4ra) for multi-modal routing queries
+- [`m4ra`](https://UrbanAnalyst.github.io/m4ra) for multi-modal routing queries
 
-- [`ua-engine`](https://github.com/urbananalyst/ua-engine) for additional
+- [`ua-engine`](https://github.com/UrbanAnalyst/ua-engine) for additional
   algorithms combining aspects of these other routing algorithms for tasks
   specific to Urban Analyst.
 
