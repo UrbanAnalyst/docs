@@ -18,8 +18,10 @@ The following additional data are then required for each city:
   rates of unemployment, quantified within a series of polygonal shapes which
   are also used to define each city.
 - Data on public transport timetables in *General Transit Feed Specification*
-  (GTFS) format.
+  (GTFS) format, or in other formats able to be converted to GTFS format.
 
 The last of these data requirements is the most restrictive, as most cities of
-the world do not have or provide public transport data in GTFS format. GTFS
-data are, for example, not available for any large city anywhere in Asia.
+the world do not have or provide public transport data in GTFS format. There
+are nevertheless thousands of cities which do provide GTFS feeds, as can be
+seen for example in the GTFS feed aggregation platform
+[transit.land](https://transit.land).
