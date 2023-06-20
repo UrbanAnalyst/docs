@@ -2,7 +2,8 @@
 
 This is the documentation for [Urban Analyst platform
 (UA)](https://urbananalyst.city), providing open source analyses of urban
-structure and function across the world.
+structure and function across the world. The source for this documentation can
+be found in [this GitHub repository](https://githu.com/UrbanAnalyst/docs).
 
 Urban Analyst provides interactive maps of the properties of cities, including
 socio-demographic conditions and the structure and function of transport
@@ -75,3 +76,6 @@ This documentation includes the following five chapters:
 3. ["UTA Variables"](./variables.md): Providing descriptions of all variables included in the Urban Analyst platform.
 4. ["Data Sources"](./data.md): Providing descriptions of all data sources used to derive these variables.
 5. ["Software and Algorithms"](./software.md): Providing descriptions of, and links to, all software used to generate the UTA variables.
+
+Contributions to, or questions regarding, this documentation, are welcome at
+[this GitHub repository](https://githu.com/UrbanAnalyst/docs).
