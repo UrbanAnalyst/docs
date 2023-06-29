@@ -41,7 +41,7 @@ city (each measured on its own distinct scale).
 | Intervals (min) | 6.9 | 4.9 |
 | Transport | 30.1 | 36.6 |
 | Pop. Dens. | 3 | 3 |
-| School Dist (km) | 2.2 | 1.5 |
+| School Dist (m) | 338 | 186 |
 | Bike Index | 0.81 | 0.76 |
 | Nature Index | 0.88 | 0.93 |
 | Parking | 1.32 | 1.55 |
