@@ -1,15 +1,17 @@
 # Variables
 
 All UA variables are measured such that lower or negative values are good,
-whereas higher values are bad. For example, unemployment or transport times are
-both better when values are lower. Indices
-of bicycle infrastructure and access to natural spaces are also transformed so
-that lower values indicate better or more of either. In these cases, the
-transformations are simply one minus the respective proportions of journeys out
-to fixed distance travelled along bicycle infrastructure, or through or
-alongside natural spaces. Values of 0 then reflect 100% of all journeys spent
-on bicycle infrastructure or in natural spaces, while values of 1 would
-represent complete absence of either bicycle infrastructure or natural spaces.
+whereas higher values are bad. (Exceptions are neutral variables such as
+population density which are nevertheless straightforward to interpret.) For
+example, unemployment or transport times are both better when values are lower.
+Indices of bicycle infrastructure and access to natural spaces are also
+transformed so that lower values indicate better or more of either. In these
+cases, the transformations are simply one minus the respective proportions of
+journeys out to fixed distance travelled along bicycle infrastructure, or
+through or alongside natural spaces. Values of 0 then reflect 100% of all
+journeys spent on bicycle infrastructure or in natural spaces, while values of
+1 would represent complete absence of either bicycle infrastructure or natural
+spaces.
 
 Variables are measured for every way, path, or street intersection within each
 city. Values for the maps are aggregated within polygons defined by the
@@ -17,17 +19,20 @@ city. Values for the maps are aggregated within polygons defined by the
 values within the statistics page are aggregated across entire cities. Unless
 explicitly described otherwise, values of all variables are weighted by
 population density. This means that, for example, distances to nearest schools
-represent average distances that each person must travel to get to school.
+represent average distances that each person must travel to get to school. Full
+descriptions of the calculation of all variables are given in the [*Software
+and Algorithms* chapter](./software.md).
 
 ## Socio-demographic variables
 
 The extent and structure of each city is defined by its "socio-demographic
-variable." These are taken from open-source datasets provided by the cities as
-a series of geographic areas, defined as polygonal shapes, and some
-corresponding measure of socio-demographic disadvantage. The cities themselves
-decide the resolution and extent of these polygonal data. These polygons then
-define the extent and shape of cities analysed in Urban Analyst, and the
-individual polygons into which the map data are aggregated.
+variable," or "social variable" for short. These are taken from open-source
+datasets provided by the cities as a series of geographic areas, defined as
+polygonal shapes, and some corresponding measure of socio-demographic
+disadvantage. The cities themselves decide the resolution and extent of these
+polygonal data. These polygons then define the extent and shape of cities
+analysed in Urban Analyst, and the individual polygons into which the map data
+are aggregated.
 
 Values of these socio-demographic variables are the only aspect that differs
 between different cities. One of the simplest versions is unemployment rate,
@@ -57,6 +62,9 @@ taking the example statistic of travel times:
 3. Use that line to obtain the "average" value of travel time at the distance
    of 10km.
 
+Values shown in the maps are aggregated within each polygon of a chosen city,
+while values shown in the statistics page are aggregated over entire cities.
+
 The remainder of this section describes the five travel variables:
 
 - Absolute travel times
@@ -79,12 +87,12 @@ transport:
   includes an additional, unique aspect of automobile travel times not
   quantified in any other equivalent system, through an algorithm to accurately
   estimate the likely time required to park a private vehicle, and then to walk
-  to a desired destination. These parking times are crucial, as direct travels
-  times alone to many inner-city destinations do not provide realistic
-  estimates of actual journey times to locations where it may be impossible to
-  actually park a private automobile.
+  to a desired destination. These parking times are crucial, as direct travel
+  times to many inner-city destinations do not provide realistic estimates of
+  actual journey times to locations where it may be impossible to actually park
+  a private automobile.
 
-- *Multi-Modal Transport.* All other UA travel times represent fastest
+- *Multi-Modal Transport.* UA's "multi-modal travel times" represent fastest
   possible times taken for journeys from every single point in a city to travel
   10km using any combination of transport modes excluding private automobile.
   The primary modes considered are walking, bicycling, and all available modes
@@ -95,9 +103,17 @@ transport:
   only, but multi-modal times will generally reflect fastest times formed by
   combining multiple modes of transport.
 
-In short, absolute travel times measure times taken with multi-modal transport,
-while relative travel times are ratios of these values compared with equivalent
-travel times with private automobile.
+Travel times measured these two ways are then combined to generate the
+following two primary travel time statistics:
+
+- *Absolute travel times* as the multi-modal travel times; that is, using any
+  mode except private automobile.
+
+- *Relative travel times* as the ratios of absolute travel times compared with
+  equivalent travel times with private automobile. Relative travel times of
+  less than one indicate that multi-modal transport is faster than equivalent
+  transport with private automobile, while values greater than one indicate
+  that private automobile transport is faster.
 
 ### Intervals and Numbers of Transfers
 
@@ -158,7 +174,7 @@ population densities.
 
 The bicycle infrastructure index is derived from a measure of the proportion of
 all possible journeys from each point out to a fixed distance of five
-kilometres that travel along dedicated bicycle infrastructure. To confirm with
+kilometres that travel along dedicated bicycle infrastructure. To conform with
 all other UA variables, the index is one minus this proportion, so that low
 values reflect high proportions of bicycle infrastructure. Values of zero would
 then reflect all journeys taken along dedicated bicycle paths, while values of
@@ -197,11 +213,12 @@ even private access. This would count as a natural space in a simply aggregate
 metric, yet not in UA because access restrictions are taken into account in the
 routing algorithms.
 
-The algorithm also measures lengths ways walked adjacent to water - so-called
-"blue space", providing a comprehensive metric of the actual ability to access
-natural spaces from every point in a city. A natural space index of zero would
-represent an entire city of natural space, with no built structures at all,
-while a value of one would represent a complete absence of natural spaces.
+The algorithm also measures lengths of ways walked adjacent to water -
+so-called "blue space", providing a comprehensive metric of the actual ability
+to access natural spaces from every point in a city. A natural space index of
+zero would represent an entire city of natural space, with no built structures
+at all, while a value of one would represent a complete absence of natural
+spaces.
 
 ## Parking index
 

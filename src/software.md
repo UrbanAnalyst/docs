@@ -1,5 +1,7 @@
 # Software and Algorithms
 
+## Software
+
 The primary software used to generate the results presented on [Urban Analyst](https://urbananalyst.city) are:
 
 - [`osmdata`](https://docs.ropensci.org/osmdata) for accessing and processing
@@ -17,3 +19,7 @@ The primary software used to generate the results presented on [Urban Analyst](h
 
 All of this software was primarily developed by the same team responsible for
 Urban Analyst itself.
+
+## Algorithms
+
+
