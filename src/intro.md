@@ -20,13 +20,14 @@ cities.
 
 # How does it work?
 
-Urban Analyst present a variety of statistics for each city analysed, as well
-as relationships between these statistics. Values for each statistic are
-derived at every street intersection in each city. These values are then
-aggregated into the polygons shown in the "Maps" page, and across entire cities
-for the values shown in the "Stats" page. Aggregations are always weighted by
-local population densities, to generate values representing equivalent values
-*per person* as experienced in each city.
+Urban Analyst present a variety of [statistics](./variables.md) for each city
+analysed, as well as relationships between these statistics. Values for each
+statistic are derived at every street intersection in each city. These values
+are then aggregated into the polygons shown in the ["Maps"
+page](https://urbananalyst.city/maps), and across entire cities for the values
+shown in the ["Stats" page](https://urbananalyst.city/stats). Aggregations are
+always weighted by local population densities, to generate values representing
+equivalent values *per person* as experienced in each city.
 
 Details are provided in the [*Data Sources*](./data.md) and [*Software and
 Algorithms*](./software.md) chapters.
