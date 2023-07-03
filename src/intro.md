@@ -47,6 +47,7 @@ Berlin   |      360      |   9,302  |      173 |  150
 Hamburg  |      192      |   4,585  |       42 |   56
 Mannheim |       44      |   1,107  |        2 |    8
 Münster  |       44      |   1,554  |        5 |    6
+London   |      506      |  20,072  |      806 |  160
 Paris    |      313      |  29,393  |    1,728 |  124
 
 One way to appreciate the scale of these calculations is through comparison
