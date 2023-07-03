@@ -5,16 +5,18 @@ This is the documentation for [Urban Analyst platform
 structure and function across the world. The source for this documentation can
 be found in [this GitHub repository](https://githu.com/UrbanAnalyst/docs).
 
-Urban Analyst provides interactive maps of the properties of cities, including
-socio-demographic conditions and the structure and function of transport
-systems. Each property is measured in terms of a "variable". Relationships
-between individual variables are also analysed and presented, such as between
-socio-demographic conditions and frequency of transport services, or between
-distances to nearest schools and access to natural spaces.
+Urban Analyst provides [interactive maps](https://urbananalyst.city/maps) of
+the properties of cities, including socio-demographic conditions and the
+structure and function of transport systems. Each property is measured in terms
+of a "variable". Relationships between individual variables are also analysed
+and presented, such as between socio-demographic conditions and frequency of
+transport services, or between distances to nearest schools and access to
+natural spaces.
 
-UA also provides statistical summaries of all cities, enabling relationships
-between any pair of variables, such as transport and socio-demographic
-disadvantage, to be compared across all UA cities.
+UA also provides [statistical summaries](https://urbananalyst.city/stats) of
+all cities, enabling relationships between any pair of variables, such as
+transport and socio-demographic disadvantage, to be compared across all UA
+cities.
 
 # How does it work?
 
