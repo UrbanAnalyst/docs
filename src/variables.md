@@ -144,17 +144,17 @@ times for the next equivalent journey out to that distance.
 
 All three of the statistics described above - travel times, intervals, and
 numbers of transfers - are measured such that lower values are more desirable.
-All three are then directly multiplied to generate a "*compound travel
+Travel times are then directly multiplied by (a logarithmically-transformed
+version of) intervals between services to generate a "*compound travel
 statistic*". Low values of this statistic only arise in locations which have
-fast travel times, short intervals between services, and few transfers. Low
-values may accordingly always be interpreted as indicating overall good
-transport services. In contrast, high values may arise through various
-combinations of variables, from extremely high values of one single variable,
-to less extreme combinations of two or three of the variables. It is thus
-generally not possible to directly discern reasons for high values of this
-compound travel statistic. Urban Analyst nevertheless provides direct insight
-into all individual values, as well as all pairwise combinations of values,
-permitting indirect insight.
+fast travel times and short intervals between services. Low values may
+accordingly always be interpreted as indicating overall good transport
+services. In contrast, high values may arise through various combinations of
+variables, from extremely high values of one single variable, to less extreme
+combinations of the two variables. It is thus generally not possible to
+directly discern reasons for high values of this compound travel statistic.
+Urban Analyst nevertheless provides direct insight into all individual values,
+as well as all pairwise combinations of values, permitting indirect insight.
 
 ## Population density
 

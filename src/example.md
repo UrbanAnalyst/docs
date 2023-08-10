@@ -39,7 +39,7 @@ city (each measured on its own distinct scale).
 | Times (rel) | 1.09 | 1.03 |
 | Num. Transfers | 0.9 | 1.5 |
 | Intervals (min) | 6.9 | 4.9 |
-| Transport | 30.1 | 36.6 |
+| Transport | 33.2 | 25.5 |
 | Pop. Dens. | 3 | 3 |
 | School Dist (m) | 338 | 186 |
 | Bike Index | 0.81 | 0.76 |
@@ -91,10 +91,9 @@ minutes) until the next equivalent service. Intervals in Paris are slightly
 under 5 minutes, whereas values in Berlin are just under 7 minutes.
 
 Finally, the "Compound Transport" variable simply multiplies absolute travel
-times by numbers of transfers by intervals. Low values of this statistic
-reflect fast and frequent transport with few transfers. Because of the
-relatively high numbers of transfers necessary in Paris, it has a considerably
-higher value of this statistic than Berlin.
+times by intervals between services. Low values of this statistic reflect fast
+and frequent transport. This statistic also indicates considerably superior
+service in Paris compared with Berlin.
 
 ### Other Variables
 
