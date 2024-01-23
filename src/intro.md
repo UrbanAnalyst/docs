@@ -18,8 +18,14 @@ all cities, enabling relationships between any pair of variables, such as
 transport and socio-demographic disadvantage, to be compared across all UA
 cities.
 
-Finally, UA enables the properties of any chosen city to be transformed to
-become more like the properties of any other chosen city.
+Finally, UA enables cities to "learn" from one another, by visualising how the
+properties of any chosen city can best be transformed to become more like the
+properties of any other chosen city. Paris, for example, has better bicycle
+infrastructure than Berlin, and the UA transformation algorithm can calculate
+how Berlin can most easily transform its bicycle infrastructure to become more
+like Paris. Values for every area in Berlin are then displayed as the
+proportional increase in bicycle infrastructure which would be necessary for
+the whole city to have infrastructure equivalent to Paris.
 
 # How does it work?
 
@@ -34,6 +40,11 @@ equivalent values *per person* as experienced in each city.
 
 Details are provided in the [*Data Sources*](./data.md) and [*Software and
 Algorithms*](./software.md) chapters.
+
+The ["Transform" page](https://urbananalyst.city/transform) transforms the data
+of one city to become more like the data from a selected "target" city. This
+page, and the algorithms used to generate its data, are described in a separate
+chapter.
 
 # How many calculations are involved?
 
