@@ -70,11 +70,11 @@ Paris's recent introduction of a uniform maximum speed limits of 30km/hour
 through the city, whereas Berlin features a number of "autobahns" with much
 higher speed limits.
 
-(Note that travel times with private automobiles include estimates of times
+Note that travel times with private automobiles include estimates of times
 required to park a vehicle and ultimately walk to any desired destination.
 Vehicular times calculated here are thus notably longer than with most
 commercial routing engines, which give vehicular travel times only, and ignore
-the critical need to park a vehicle and walk to a destination.)
+the critical need to park a vehicle and walk to a destination.
 
 All individual variables also enable comparison in terms of "Variation", rather
 than "Average" values. Comparing these reveals that Berlin generally has
