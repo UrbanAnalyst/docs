@@ -18,6 +18,9 @@ all cities, enabling relationships between any pair of variables, such as
 transport and socio-demographic disadvantage, to be compared across all UA
 cities.
 
+Finally, UA enables the properties of any chosen city to be transformed to
+become more like the properties of any other chosen city.
+
 # How does it work?
 
 Urban Analyst present a variety of [statistics](./variables.md) for each city
