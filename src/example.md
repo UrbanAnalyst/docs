@@ -46,6 +46,11 @@ city (each measured on its own distinct scale).
 | Nature Index | 0.88 | 0.93 |
 | Parking | 1.32 | 1.55 |
 
+Social disadvantage is also quantified for all cities. However, each city
+calculates this in different ways, and values are not comparable between
+cities. Values are nevertheless standardised for the pairwise comparisons, and
+strengths of relationship described there remain valid.
+
 ### Transport
 
 The "Transport Absolute" variable measures the absolute time (in minutes)
