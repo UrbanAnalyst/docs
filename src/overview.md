@@ -3,14 +3,14 @@
 This chapter provides an overview of the three main pages of the [Urban Analyst
 platform](https://urbananalyst.city):
 
-- [Maps](https://urbananalyst.city/maps) showing interactive maps for each
+- [Map](https://urbananalyst.city/maps) showing interactive maps for each
   city;
-- [Stats](https://urbananalyst.city/stats) comparing aggregate statistics for
+- [Compare](https://urbananalyst.city/stats) comparing aggregate statistics for
   all cities; and
-- [Transformations](https://urbananalyst.city/transform) for transforming any
-  chosen city to become more like other cities.
+- [Transform](https://urbananalyst.city/transform) for transforming any chosen
+  city to become more like other cities.
 
-## Maps
+## Map
 
 The [Maps page](https://urbananalyst.city/maps) is the first and main page of
 Urban Analyst. This page shows interactive maps for each city, with values for
@@ -47,6 +47,7 @@ words brought up by clicking the "Explain Layer" button, "Low values indicate
 that good access to natural spaces is coupled with disadvantageous social
 conditions."
 
-## Stats
+## Compare
 
-## Transformations
+
+## Transform
