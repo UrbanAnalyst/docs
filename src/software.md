@@ -13,7 +13,7 @@ The primary software used to generate the results presented on [Urban Analyst](h
 
 - [`m4ra`](https://UrbanAnalyst.github.io/m4ra) for multi-modal routing queries
 
-- [`ua-engine`](https://github.com/UrbanAnalyst/ua-engine) for additional
+- [`uaengine`](https://github.com/UrbanAnalyst/uaengine) for additional
   algorithms combining aspects of these other routing algorithms for tasks
   specific to Urban Analyst.
 
