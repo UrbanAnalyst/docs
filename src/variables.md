@@ -191,7 +191,7 @@ dedicated bicycle ways. These "half-weight" ways include residential or
 automobile lanes. A third category of ways are weighted at one-quarter,
 including footpaths and general pedestrian areas which permit bicycle travel.
 The precise weighting scheme can be viewed in [this source code
-file](https://github.com/UrbanAnalyst/ua-engine/blob/main/R/bicycle-infrastructure.R).
+file](https://github.com/UrbanAnalyst/uaengine/blob/main/R/bicycle-infrastructure.R).
 
 The weighted sums of all distances along these types of ways traversed out to
 five kilometres from any given point are then divided by the sum of all
