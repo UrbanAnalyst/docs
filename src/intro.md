@@ -52,15 +52,13 @@ The values presented in Urban Analyst represent the first truly comprehensive
 routing analyses for each city, derived from estimates of travel times from
 every point in each city to every other point using any combination of possible
 modes of transport. The following table summarises numbers of street
-intersections, public transport ("PT") stops, and calculations for current
-Urban Analyst cities.
+intersections, public transport ("PT") stops, and calculations for a selection
+of Urban Analyst cities.
 
  city    | intersections<br>(thousands) | PT stops | PT calcs<br>(millions) | routing calcs<br>(billions)
 -------- | ------------- | -------- | -------- | -----------
 Berlin   |      360      |   9,302  |      173 |  150
 Hamburg  |      192      |   4,585  |       42 |   56
-Mannheim |       44      |   1,107  |        2 |    8
-Münster  |       44      |   1,554  |        5 |    6
 London   |      506      |  20,072  |      806 |  160
 Paris    |      313      |  29,393  |    1,728 |  124
 
