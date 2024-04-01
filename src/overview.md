@@ -10,6 +10,10 @@ platform](https://urbananalyst.city):
 - [Transform](https://urbananalyst.city/transform) for transforming any chosen
   city to become more like other cities.
 
+Each page includes a pop-up "guided tour" explaining the key features. These
+tours will automatically start the first time a page is opened, or can be
+manually opened by clicking on the "Help" button on any of the main pages.
+
 ## Compare
 
 The [Compare page](https://urbananalyst.city/compare) is the first and main
