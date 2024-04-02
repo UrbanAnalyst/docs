@@ -3,8 +3,8 @@
 This chapter provides an overview of the three main pages of the [Urban Analyst
 platform](https://urbananalyst.city):
 
-- [Compare](https://urbananalyst.city/stats) comparing aggregate statistics for
-  all cities; and
+- [Compare](https://urbananalyst.city/compare) comparing aggregate statistics
+  for all cities; and
 - [Map](https://urbananalyst.city/maps) showing interactive maps for each
   city;
 - [Transform](https://urbananalyst.city/transform) for transforming any chosen
