@@ -13,9 +13,9 @@ and presented, such as between socio-demographic conditions and frequency of
 transport services, or between distances to nearest schools and access to
 natural spaces.
 
-UA also provides [statistical summaries](https://urbananalyst.city/stats) of
-all cities, enabling relationships between any pair of variables, such as
-transport and socio-demographic disadvantage, to be compared across all UA
+UA also provides [statistical comparisons](https://urbananalyst.city/compare)
+between all cities, enabling relationships between any pair of variables, such
+as transport and socio-demographic disadvantage, to be compared across all UA
 cities.
 
 Finally, UA enables cities to "learn" from one another, by visualising how the
