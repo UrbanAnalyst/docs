@@ -1,17 +1,14 @@
 # Introduction
 
-This is the documentation for [Urban Analyst platform
-(UA)](https://urbananalyst.city), providing open source analyses of urban
-structure and function across the world. The source for this documentation can
-be found in [this GitHub repository](https://githu.com/UrbanAnalyst/docs).
-
-Urban Analyst provides [interactive maps](https://urbananalyst.city/maps) of
-the properties of cities, including socio-demographic conditions and the
-structure and function of transport systems. Each property is measured in terms
-of a "variable". Relationships between individual variables are also analysed
-and presented, such as between socio-demographic conditions and frequency of
-transport services, or between distances to nearest schools and access to
-natural spaces.
+This is the documentation for [Urban Analyst (UA)](https://urbananalyst.city).
+Urban Analyst provides open source analyses of the structure and function of
+cities across the world. Each city can be viewed as an [interactive
+map](https://urbananalyst.city/maps) displaying a range of properties or
+variables. These include socio-demographic conditions and the structure and
+function of transport systems. The platform also analyses relationships between
+individual variables, such as between socio-demographic conditions and
+frequency of transport services, or between distances to nearest schools and
+access to natural spaces.
 
 UA also provides [statistical comparisons](https://urbananalyst.city/compare)
 between all cities, enabling relationships between any pair of variables, such
