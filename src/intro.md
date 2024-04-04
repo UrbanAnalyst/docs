@@ -34,10 +34,9 @@ page](https://urbananalyst.city/maps), and across entire cities for the values
 shown in the ["Compare"](https://urbananalyst.city/compare) and
 ["Transform"](https://urbananalyst.city/transform) pages. Aggregations are
 always weighted by local population densities, so that all UA values represent
-values *per person* as experienced in each city.
-
-Details are provided in the [*Data Sources*](./data.md) and [*Software and
-Algorithms*](./software.md) chapters.
+values *per person* as experienced in each city. Details are provided in the
+[*Data Sources*](./data.md) and [*Software and Algorithms*](./software.md)
+chapters.
 
 The ["Transform" page](https://urbananalyst.city/transform) transforms the data
 of one city to become more like the data from a selected "target" city. This
