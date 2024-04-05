@@ -79,10 +79,11 @@ about requesting full data sources.
 This documentation includes the following five chapters:
 
 1. This introduction
-2. ["Example"](./example.md): A walk-through example comparison between Berlin, Germany and Paris, France, illustrating the kinds of comparisons enabled by the Urban Analyst platform.
-3. ["UTA Variables"](./variables.md): Providing descriptions of all variables included in the Urban Analyst platform.
-4. ["Data Sources"](./data.md): Providing descriptions of all data sources used to derive these variables.
-5. ["Software and Algorithms"](./software.md): Providing descriptions of, and links to, all software used to generate the UTA variables.
+2. ["Overview"](./overview.md): A brief overview of the main components of Urban Analyst.
+3. ["Example"](./example.md): A walk-through example comparison between Berlin, Germany and Paris, France, illustrating the kinds of comparisons enabled by the Urban Analyst platform.
+4. ["UTA Variables"](./variables.md): Providing descriptions of all variables included in the Urban Analyst platform.
+5. ["Data Sources"](./data.md): Providing descriptions of all data sources used to derive these variables.
+6. ["Software and Algorithms"](./software.md): Providing descriptions of, and links to, all software used to generate the UTA variables.
 
 Contributions to, or questions regarding, this documentation, are welcome at
 [this GitHub repository](https://githu.com/UrbanAnalyst/docs).
