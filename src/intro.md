@@ -38,11 +38,6 @@ values *per person* as experienced in each city. Details are provided in the
 [*Data Sources*](./data.md) and [*Software and Algorithms*](./software.md)
 chapters.
 
-The ["Transform" page](https://urbananalyst.city/transform) transforms the data
-of one city to become more like the data from a selected "target" city. This
-page, and the algorithms used to generate its data, are described in a separate
-chapter.
-
 # How many calculations are involved?
 
 The values presented in Urban Analyst represent the first truly comprehensive
