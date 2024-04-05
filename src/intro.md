@@ -40,12 +40,11 @@ chapters.
 
 # How many calculations are involved?
 
-The values presented in Urban Analyst represent the first truly comprehensive
-routing analyses for each city, derived from estimates of travel times from
-every point in each city to every other point using any combination of possible
-modes of transport. The following table summarises numbers of street
-intersections, public transport ("PT") stops, and calculations for a selection
-of Urban Analyst cities.
+The values presented in Urban Analyst are derived from estimates of travel
+times from every point in each city to every other point using any combination
+of possible modes of transport. The following table summarises numbers of
+street intersections, public transport ("PT") stops, and calculations for a
+selection of Urban Analyst cities.
 
  city    | intersections<br>(thousands) | PT stops | PT calcs<br>(millions) | routing calcs<br>(billions)
 -------- | ------------- | -------- | -------- | -----------
