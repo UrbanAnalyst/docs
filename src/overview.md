@@ -20,6 +20,31 @@ pop-up "guided tour" explaining the key features. These tours will
 automatically start the first time a page is opened, or can be manually opened
 by clicking on the "Help" button on any of the main pages.
 
+----
+
+## Summarise
+
+The [Summarise page](https://urbananalyst.city/summarise) provides an overview
+of the general statistical properties of any chosen UA city. Statistics for
+each chosen city are compared with those for all other cities, and textual
+summaries generated for all statistics which are significantly different.
+Summaries are provided not just for individual statistics, but for the
+strengths of relationship between all pairs of statistics.
+
+The values described in this initial part of the [Summarise
+page](https://urbananalyst.city/summarise) indicate which statistics might be
+particularly worth examining in both the
+[Compare](https://urbananalyst.city/compare) and the [Map
+](https://urbananalyst.city/map) pages.
+
+The [Summarise page](https://urbananalyst.city/summarise) also includes a
+section describing the best "Target city" for each chosen city. As explained
+there, the best target city is the city which is best in all the ways that the
+chosen city is worse than average. This target city, and corresponding
+variables described there, indicate which cities and variables might be
+particularly worth examining in the [Transform
+page](https://urbananalyst.city/transform).
+
 
 ----
 
