@@ -3,16 +3,22 @@
 This chapter provides an overview of the three main pages of the [Urban Analyst
 platform](https://urbananalyst.city):
 
+- [Summarise](https://urbananalyst.city/summarise) providing summary overviews
+  for each city of key statistical properties and relationships with other
+  cities;
 - [Compare](https://urbananalyst.city/compare) comparing aggregate statistics
-  for all cities; and
+  for all cities;
 - [Map](https://urbananalyst.city/maps) showing interactive maps for each
   city;
 - [Transform](https://urbananalyst.city/transform) for transforming any chosen
   city to become more like other cities.
 
-Each page includes a pop-up "guided tour" explaining the key features. These
-tours will automatically start the first time a page is opened, or can be
-manually opened by clicking on the "Help" button on any of the main pages.
+The [Summarise page](https://urbananalyst.city/summarise) is the best place to
+start. The summary for any chosen city will indicate which properties of the
+other pages are most important. Each of the latter three pages also includes a
+pop-up "guided tour" explaining the key features. These tours will
+automatically start the first time a page is opened, or can be manually opened
+by clicking on the "Help" button on any of the main pages.
 
 ## Compare
 
