@@ -20,6 +20,9 @@ pop-up "guided tour" explaining the key features. These tours will
 automatically start the first time a page is opened, or can be manually opened
 by clicking on the "Help" button on any of the main pages.
 
+
+----
+
 ## Compare
 
 The [Compare page](https://urbananalyst.city/compare) is the first and main
@@ -47,6 +50,8 @@ words brought up by clicking the "Explain Layer" button, "Low values indicate
 that good access to natural spaces is coupled with disadvantageous social
 conditions."
 
+----
+
 ## Map
 
 The [Map page](https://urbananalyst.city/map) shows interactive maps for each
@@ -62,6 +67,8 @@ than higher values. Colour scales on all maps thus generally display lower
 values in brighter, yellow colours, while higher values are displayed in
 darker, blue or violet colours. The control panel includes an "Explain Layer"
 button which opens a text panel explaining details of the chosen variable.
+
+----
 
 ## Transform
 
