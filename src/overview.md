@@ -89,6 +89,9 @@ aggregated into XX polygons. The map for Berlin uses these polygons provided by
 the city to aggregate all measured variables. The variables are described in a
 [subsequent chapter](./variables.md).
 
+Details of the polygons for each city can be seen by selecting the "Social"
+layer in the Map page and then clicking on the "Explain Layer" button.
+
 As in all UA measurements, lower values of all variables are generally better
 than higher values. Colour scales on all maps thus generally display lower
 values in brighter, yellow colours, while higher values are displayed in
@@ -141,10 +144,10 @@ more like Berlin, but also how it might also improve its relationship between
 access to nature and social disadvantage.
 
 By default, values of *Extra Layers* are automatically selected as those which
-have better relationships in the target city. These default values will thus
-change for each choice of target city and focal layer. It may be necessary to
-click on the "Reset" button in the *Extra Layers* panel to update this default
-selection after changing any of these options.
+have better relationships in the chosen target city. These default values will
+thus change for each choice of target city and focal layer. It may be necessary
+to click on the "Reset" button in the *Extra Layers* panel to update this
+default selection after changing any of these options.
 
 ### Output Layer
 
