@@ -1,19 +1,18 @@
 # Introduction
 
 This is the documentation for [Urban Analyst (UA)](https://urbananalyst.city).
-Urban Analyst provides open source analyses of the structure and function of
-cities across the world. Each city can be viewed as an [interactive
-map](https://urbananalyst.city/maps) displaying a range of properties or
-variables. These include socio-demographic conditions and the structure and
-function of transport systems. The platform also analyses relationships between
-individual variables, such as between socio-demographic conditions and
-frequency of transport services, or between distances to nearest schools and
-access to natural spaces.
+Urban Analyst analyses the structure and function of cities across the world.
+Each city can be viewed as an [interactive map](https://urbananalyst.city/maps)
+displaying several different properties or variables. These include
+socio-demographic conditions and the structure and function of transport
+systems. The platform also analyses relationships between individual variables,
+such as between socio-demographic conditions and frequency of transport
+services, or between distances to nearest schools and access to natural spaces.
 
 UA also provides [statistical comparisons](https://urbananalyst.city/compare)
-between all cities, enabling relationships between any pair of variables, such
-as transport and socio-demographic disadvantage, to be compared across all UA
-cities.
+between all cities, enabling comparisons across all UA cities of single
+variables, as well as relationships between any pair of variables, such as
+transport and socio-demographic disadvantage. 
 
 Finally, UA enables cities to "learn" from one another, by visualising how the
 properties of any chosen city can best be transformed to become more like the
