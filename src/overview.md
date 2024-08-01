@@ -51,13 +51,14 @@ page](https://urbananalyst.city/transform).
 
 ## Compare
 
-The [Compare page](https://urbananalyst.city/compare) is the first and main
-page of Urban Analyst, enabling the properties of all UA cities to be compared.
-A pull-down panel enables each variable or "layer" to be selected. The page
-then displays a graphical representation of values of the chosen layer for all
-cities. As in all UA pages, lower values are generally better than higher
-values. The control panel includes an "Explain Layer" button which opens a text
-panel explaining details of the chosen variable.
+The [Compare page](https://urbananalyst.city/compare) enables comparisons
+between all UA cities, both in terms of single variables and relationships
+between any selected pair of variables. A pull-down panel enables each variable
+or "layer" to be selected. The page then displays a graphical representation of
+values of the chosen layer for all cities. As in all UA pages, lower values are
+generally better than higher values. The control panel includes an "Explain
+Layer" button which opens a text panel explaining details of the chosen
+variable.
 
 ### Single and Paired Variables
 
