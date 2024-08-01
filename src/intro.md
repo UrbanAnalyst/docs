@@ -25,17 +25,17 @@ the whole city to have infrastructure equivalent to Paris.
 
 # How does it work?
 
-Urban Analyst present a variety of [statistics](./variables.md) for each city
-analysed, as well as relationships between these statistics. Values for each
-statistic are derived at every street intersection in each city. These values
+Urban Analyst present a variety of [variables](./variables.md) for each city
+analysed, as well as relationships between these variables. Values for each
+variable are derived at every street intersection in each city. These values
 are then aggregated into the polygons shown in the ["Map"
-page](https://urbananalyst.city/maps), and across entire cities for the values
-shown in the ["Compare"](https://urbananalyst.city/compare) and
-["Transform"](https://urbananalyst.city/transform) pages. Aggregations are
-always weighted by local population densities, so that all UA values represent
-values *per person* as experienced in each city. Details are provided in the
-[*Data Sources*](./data.md) and [*Software and Algorithms*](./software.md)
-chapters.
+page](https://urbananalyst.city/maps) and
+["Transform"](https://urbananalyst.city/transform) pages, and across entire
+cities for the values shown in the
+["Compare"](https://urbananalyst.city/compare) page. Aggregations are always
+weighted by local population densities, so that all UA values represent values
+*per person* as experienced in each city. Details are provided in the [*Data
+Sources*](./data.md) and [*Software and Algorithms*](./software.md) chapters.
 
 # How many calculations are involved?
 
