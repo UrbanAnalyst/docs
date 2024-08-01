@@ -25,3 +25,6 @@ the world do not have or provide public transport data in GTFS format. There
 are nevertheless thousands of cities which do provide GTFS feeds, as can be
 seen for example in the GTFS feed aggregation platform
 [transit.land](https://transit.land).
+
+For USA cities, data for the additional two variables of housing value and
+rental price per room are obtained from US Government census data.
