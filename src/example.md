@@ -26,7 +26,9 @@ Analyst platform](https://urbananalyst.city) currently measures 11 variables,
 along with strengths of relationship between all paired combinations of these.
 This amounts to 11 * (11 - 1) / 2 = 55 pairwise combinations. Strengths of
 relationship are standardised, so are comparable throughout between all pairs
-of variables, and between different cities.
+of variables, and between different cities. Two additional variables are
+included for cities from the USA, enabling even more pairwise comparisons for
+these cities.
 
 ## Individual Variables.
 
@@ -45,6 +47,7 @@ city (each measured on its own distinct scale).
 | Bike Index | 0.81 | 0.76 |
 | Nature Index | 0.88 | 0.93 |
 | Parking | 1.32 | 1.55 |
+
 
 Social disadvantage is also quantified for all cities. However, each city
 calculates this in different ways, and values are not comparable between
