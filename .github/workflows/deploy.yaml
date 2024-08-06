@@ -36,6 +36,7 @@ jobs:
         rm -rf *
         mv ../book/* .
         echo 'docs.urbananalyst.city' > CNAME
+        echo '_vercel vc-domain-verify=docs.urbananalyst.city,5f2378a5d148a2e596c7' > TXT
         git add .
         git commit -m "Deploy $GITHUB_SHA to gh-pages"
         git push --force --set-upstream origin gh-pages
