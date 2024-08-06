@@ -1,24 +1,25 @@
 # Overview
 
-This chapter provides an overview of the three main pages of the [Urban Analyst
+This chapter provides an overview of the four main pages of the [Urban Analyst
 platform](https://urbananalyst.city):
 
-- [Summarise](https://urbananalyst.city/summarise) providing summary overviews
-  for each city of key statistical properties and relationships with other
-  cities;
-- [Compare](https://urbananalyst.city/compare) comparing aggregate statistics
-  for all cities;
-- [Map](https://urbananalyst.city/maps) showing interactive maps for each
-  city;
-- [Transform](https://urbananalyst.city/transform) for transforming any chosen
-  city to become more like other cities.
+- The [summarise page](https://urbananalyst.city/summarise) provides summary
+  overviews for each city of key statistical properties and relationships with
+  other cities;
+- The [compare page](https://urbananalyst.city/compare) compares aggregate
+  statistics for all cities;
+- The [map page](https://urbananalyst.city/maps) shows interactive maps for
+  each city;
+- The [transform page](https://urbananalyst.city/transform) shows the effect of
+  transforming any chosen city to become more like other cities.
 
-The [Summarise page](https://urbananalyst.city/summarise) is the best place to
-start. The summary for any chosen city will indicate which properties of the
-other pages are most important. Each of the latter three pages also includes a
-pop-up "guided tour" explaining the key features. These tours will
-automatically start the first time a page is opened, or can be manually opened
-by clicking on the "Help" button on any of the main pages.
+The best place to start is the [Summarise
+page](https://urbananalyst.city/summarise). The summary for any chosen city
+will indicate which properties of the other pages are most important. Each of
+the latter three pages also includes a pop-up "guided tour" explaining the key
+features. These tours will automatically start the first time a page is opened,
+or can be manually opened by clicking on the "Help" button on any of the main
+pages.
 
 ----
 
@@ -50,13 +51,14 @@ page](https://urbananalyst.city/transform).
 
 ## Compare
 
-The [Compare page](https://urbananalyst.city/compare) is the first and main
-page of Urban Analyst, enabling the properties of all UA cities to be compared.
-A pull-down panel enables each variable or "layer" to be selected. The page
-then displays a graphical representation of values of the chosen layer for all
-cities. As in all UA pages, lower values are generally better than higher
-values. The control panel includes an "Explain Layer" button which opens a text
-panel explaining details of the chosen variable.
+The [Compare page](https://urbananalyst.city/compare) enables comparisons
+between all UA cities, both in terms of single variables and relationships
+between any selected pair of variables. A pull-down panel enables each variable
+or "layer" to be selected. The page then displays a graphical representation of
+values of the chosen layer for all cities. As in all UA pages, lower values are
+generally better than higher values. The control panel includes an "Explain
+Layer" button which opens a text panel explaining details of the chosen
+variable.
 
 ### Single and Paired Variables
 
@@ -86,6 +88,9 @@ Berlin, for example, regularly measures a compound index of social disadvantage
 aggregated into XX polygons. The map for Berlin uses these polygons provided by
 the city to aggregate all measured variables. The variables are described in a
 [subsequent chapter](./variables.md).
+
+Details of the polygons for each city can be seen by selecting the "Social"
+layer in the Map page and then clicking on the "Explain Layer" button.
 
 As in all UA measurements, lower values of all variables are generally better
 than higher values. Colour scales on all maps thus generally display lower
@@ -139,10 +144,10 @@ more like Berlin, but also how it might also improve its relationship between
 access to nature and social disadvantage.
 
 By default, values of *Extra Layers* are automatically selected as those which
-have better relationships in the target city. These default values will thus
-change for each choice of target city and focal layer. It may be necessary to
-click on the "Reset" button in the *Extra Layers* panel to update this default
-selection after changing any of these options.
+have better relationships in the chosen target city. These default values will
+thus change for each choice of target city and focal layer. It may be necessary
+to click on the "Reset" button in the *Extra Layers* panel to update this
+default selection after changing any of these options.
 
 ### Output Layer
 

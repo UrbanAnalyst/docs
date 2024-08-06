@@ -3,6 +3,6 @@
 - [Introduction](./intro.md)
 - [Overview](./overview.md)
 - [Example](./example.md)
-- [UTA Variables](./variables.md)
+- [UA Variables](./variables.md)
 - [Data Sources](./data.md)
 - [Software and Algorithms](./software.md)

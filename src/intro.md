@@ -1,19 +1,18 @@
 # Introduction
 
 This is the documentation for [Urban Analyst (UA)](https://urbananalyst.city).
-Urban Analyst provides open source analyses of the structure and function of
-cities across the world. Each city can be viewed as an [interactive
-map](https://urbananalyst.city/maps) displaying a range of properties or
-variables. These include socio-demographic conditions and the structure and
-function of transport systems. The platform also analyses relationships between
-individual variables, such as between socio-demographic conditions and
-frequency of transport services, or between distances to nearest schools and
-access to natural spaces.
+Urban Analyst analyses the structure and function of cities across the world.
+Each city can be viewed as an [interactive map](https://urbananalyst.city/maps)
+displaying several different properties or variables. These include
+socio-demographic conditions and the structure and function of transport
+systems. The platform also analyses relationships between individual variables,
+such as between socio-demographic conditions and frequency of transport
+services, or between distances to nearest schools and access to natural spaces.
 
 UA also provides [statistical comparisons](https://urbananalyst.city/compare)
-between all cities, enabling relationships between any pair of variables, such
-as transport and socio-demographic disadvantage, to be compared across all UA
-cities.
+between all cities, enabling comparisons across all UA cities of single
+variables, as well as relationships between any pair of variables, such as
+transport and socio-demographic disadvantage. 
 
 Finally, UA enables cities to "learn" from one another, by visualising how the
 properties of any chosen city can best be transformed to become more like the
@@ -26,17 +25,17 @@ the whole city to have infrastructure equivalent to Paris.
 
 # How does it work?
 
-Urban Analyst present a variety of [statistics](./variables.md) for each city
-analysed, as well as relationships between these statistics. Values for each
-statistic are derived at every street intersection in each city. These values
+Urban Analyst present a variety of [variables](./variables.md) for each city
+analysed, as well as relationships between these variables. Values for each
+variable are derived at every street intersection in each city. These values
 are then aggregated into the polygons shown in the ["Map"
-page](https://urbananalyst.city/maps), and across entire cities for the values
-shown in the ["Compare"](https://urbananalyst.city/compare) and
-["Transform"](https://urbananalyst.city/transform) pages. Aggregations are
-always weighted by local population densities, so that all UA values represent
-values *per person* as experienced in each city. Details are provided in the
-[*Data Sources*](./data.md) and [*Software and Algorithms*](./software.md)
-chapters.
+page](https://urbananalyst.city/maps) and
+["Transform"](https://urbananalyst.city/transform) pages, and across entire
+cities for the values shown in the
+["Compare"](https://urbananalyst.city/compare) page. Aggregations are always
+weighted by local population densities, so that all UA values represent values
+*per person* as experienced in each city. Details are provided in the [*Data
+Sources*](./data.md) and [*Software and Algorithms*](./software.md) chapters.
 
 # How many calculations are involved?
 
@@ -81,9 +80,9 @@ This documentation includes the following five chapters:
 1. This introduction
 2. ["Overview"](./overview.md): A brief overview of the main components of Urban Analyst.
 3. ["Example"](./example.md): A walk-through example comparison between Berlin, Germany and Paris, France, illustrating the kinds of comparisons enabled by the Urban Analyst platform.
-4. ["UTA Variables"](./variables.md): Providing descriptions of all variables included in the Urban Analyst platform.
+4. ["UA Variables"](./variables.md): Providing descriptions of all variables included in the Urban Analyst platform.
 5. ["Data Sources"](./data.md): Providing descriptions of all data sources used to derive these variables.
-6. ["Software and Algorithms"](./software.md): Providing descriptions of, and links to, all software used to generate the UTA variables.
+6. ["Software and Algorithms"](./software.md): Providing descriptions of, and links to, all software used to generate the UA variables.
 
 Contributions to, or questions regarding, this documentation, are welcome at
 [this GitHub repository](https://githu.com/UrbanAnalyst/docs).

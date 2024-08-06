@@ -7,7 +7,7 @@ example, unemployment or transport times are both better when values are lower.
 Indices of bicycle infrastructure and access to natural spaces are also
 transformed so that lower values indicate better or more of either. In these
 cases, the transformations are simply one minus the respective proportions of
-journeys out to fixed distance travelled along bicycle infrastructure, or
+journeys out to a fixed distance travelled along bicycle infrastructure, or
 through or alongside natural spaces. Values of 0 then reflect 100% of all
 journeys spent on bicycle infrastructure or in natural spaces, while values of
 1 would represent complete absence of either bicycle infrastructure or natural
@@ -234,3 +234,8 @@ of distance-weighted total building volumes.
 All publicly accessible parking spaces are counted, including on-street
 parking, open parking lots, and multi-level parking garages. Building volumes
 are aggregated regardless of type or purpose.
+
+## Housing value and rent
+
+For USA cities only, additional statistics are provided for average housing
+value per room, and average rental per room, both in US dollars.

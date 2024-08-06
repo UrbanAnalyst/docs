@@ -3,19 +3,19 @@
 This chapter demonstrates most of the capabilities of the [Urban Analyst
 platform](https://urbananalyst.city) through exploring comparisons between the
 cities of Paris, France, and Berlin, Germany. It is important to remember
-throughout that lower values in all UTA statistics are always better. Values
+throughout that lower values in all UA statistics are always better. Values
 are also weighted by local population densities. This is important because, for
 example, public transport systems should be constructed to offer the fastest
 services to the areas where most people live. Not implementing this weighting
 would, in contrast, leave measures in some form of times per unit area, so that
 for example travel times from unpopulated parts of a city would be weighted
 equally to times from densely populated parts. Weighting travel times, and all
-other UTA variables, by population density converts them to values as
+other UA variables, by population density converts them to values as
 experienced on average by each person in a city.
 
 The comparisons in this chapter between Paris and Berlin are mostly drawn from
 the "Stats" page, which provides overviews of entire cities, and comparisons
-with all other UTA cities. The "Maps" page can then be used to examine the
+with all other UA cities. The "Maps" page can then be used to examine the
 actual spatial distributions of particular variables or relationships within
 any given city.
 
@@ -26,7 +26,9 @@ Analyst platform](https://urbananalyst.city) currently measures 11 variables,
 along with strengths of relationship between all paired combinations of these.
 This amounts to 11 * (11 - 1) / 2 = 55 pairwise combinations. Strengths of
 relationship are standardised, so are comparable throughout between all pairs
-of variables, and between different cities.
+of variables, and between different cities. Two additional variables are
+included for cities from the USA, enabling even more pairwise comparisons for
+these cities.
 
 ## Individual Variables.
 
@@ -45,6 +47,7 @@ city (each measured on its own distinct scale).
 | Bike Index | 0.81 | 0.76 |
 | Nature Index | 0.88 | 0.93 |
 | Parking | 1.32 | 1.55 |
+
 
 Social disadvantage is also quantified for all cities. However, each city
 calculates this in different ways, and values are not comparable between
@@ -125,7 +128,7 @@ service in Paris compared with Berlin.
   whereas most of the Seine in Paris is effectively inaccessible to
   pedestrians.
 - "Parking": Finally, both Paris and Berlin offer relatively little opportunity
-  to park private automobiles compared with the other UTA cities, with Berlin
+  to park private automobiles compared with the other UA cities, with Berlin
   notably less than Paris.
 
 ## Relationships between variables
