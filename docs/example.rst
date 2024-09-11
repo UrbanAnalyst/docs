@@ -1,8 +1,8 @@
 3. Example
 ##########
 
-This chapter demonstrates most of the capabilities of the [Urban Analyst
-platform](https://urbananalyst.city) through exploring comparisons between the
+This chapter demonstrates most of the capabilities of the `Urban Analyst
+platform <https://urbananalyst.city>`_ through exploring comparisons between the
 cities of Paris, France, and Berlin, Germany. It is important to remember
 throughout that lower values in all UA statistics are always better. Values
 are also weighted by local population densities. This is important because, for
@@ -22,8 +22,8 @@ any given city.
 
 This comparison starts by stepping through each variable to describe kinds of
 information able to be extracted, before examining pairwise relationships
-between these variables, and concluding with a general summary. The [Urban
-Analyst platform](https://urbananalyst.city) currently measures 11 variables,
+between these variables, and concluding with a general summary. The `Urban
+Analyst platform <https://urbananalyst.city>`_ currently measures 11 variables,
 along with strengths of relationship between all paired combinations of these.
 This amounts to 11 * (11 - 1) / 2 = 55 pairwise combinations. Strengths of
 relationship are standardised, so are comparable throughout between all pairs
