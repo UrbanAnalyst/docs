@@ -21,8 +21,8 @@ values within the statistics page are aggregated across entire cities. Unless
 explicitly described otherwise, values of all variables are weighted by
 population density. This means that, for example, distances to nearest schools
 represent average distances that each person must travel to get to school. Full
-descriptions of the calculation of all variables are given in the [*Software
-and Algorithms* chapter](./software.md).
+descriptions of the calculation of all variables are given in the :ref:`*Software
+and Algorithms* chapter<6. Software and Algorithms>`.
 
 Socio-demographic variables
 ***************************
@@ -86,8 +86,8 @@ transport:
   benchmark for measures of travel time using other modes. UA generates
   realistic estimates of private automobile travel times through scaling to
   empirically observed data on actual vehicular travel times. (Calibration
-  procedures are implemented and documented in [this GitHub
-  repository](https://github.com/UrbanAnalyst/ttcalib).) Importantly, UA
+  procedures are implemented and documented in `this GitHub
+  repository <https://github.com/UrbanAnalyst/ttcalib>`_.) Importantly, UA
   includes an additional, unique aspect of automobile travel times not
   quantified in any other equivalent system, through an algorithm to accurately
   estimate the likely time required to park a private vehicle, and then to walk
@@ -165,8 +165,8 @@ as well as all pairwise combinations of values, permitting indirect insight.
 Population density
 ******************
 
-Population density values are taken directly from the [European Union *Global
-Human Settlement Layer*](https://ghsl.jrc.ec.europa.eu/index.php) data,
+Population density values are taken directly from the `European Union *Global
+Human Settlement Layer* <https://ghsl.jrc.ec.europa.eu/index.php>`_ data,
 aggregated into polygons for maps, or across entire cities for statistics.
 
 Distance to nearest schools
@@ -199,8 +199,8 @@ dedicated bicycle ways. These "half-weight" ways include residential or
 "living" streets, unpaved tracks, and bicycle lanes directly alongside
 automobile lanes. A third category of ways are weighted at one-quarter,
 including footpaths and general pedestrian areas which permit bicycle travel.
-The precise weighting scheme can be viewed in [this source code
-file](https://github.com/UrbanAnalyst/uaengine/blob/main/R/bicycle-infrastructure.R).
+The precise weighting scheme can be viewed in `this source code file
+<https://github.com/UrbanAnalyst/uaengine/blob/main/R/bicycle-infrastructure.R>`_.
 
 The weighted sums of all distances along these types of ways traversed out to
 five kilometres from any given point are then divided by the sum of all
