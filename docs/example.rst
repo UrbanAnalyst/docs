@@ -176,26 +176,86 @@ not interpreted in the following sub-sections.
 The following table summarises the values of the strongest pairwise
 relationships for each city:
 
-| Variable1 | Variable2 | Berlin | Paris |
-|:------:|:----:|:---------|:---------|
-| Times (abs) | Bike |  1.0 |  2.0 |
-| Times (abs) | Natural |  -1.0 |  -0.5 |
-| Times (abs) | Parking |  0 |  -0.15 |
-| Times (abs) | Pop. Dens. |  -0.15 |  -0.11 |
-| Times (abs) | School dist |  0.12 |  0.06 |
-| Times (abs) | Transfers |  -0.31 |  -0.48 |
-| Times (rel) | Bike |  0 |  0.16 |
-| | | |
-| Transport | Natural |  -0.22 |  2.46 |
-| Transport | Parking |  1.7 |  1.9 |
-| | | |
-| School dist | Bike | 0  |  0.4 |
-| School dist | Natural |  -0.12 |  -0.06 |
-| | | |
-| Social | Bike |  0.52 |  -0.38 |
-| Social | Natural |  -0.1 |  2.0 |
-| Social | Parking |  0.04 |  -2.18 |
-| Social | School dist |  -0.05 |  -0.25 |
+.. list-table:: Pairwise Relationships between Variables
+   :widths: 30 30 20 20
+   :header-rows: 1
+
+   * - Variable 1
+     - Variable 2
+     - Berlin
+     - Paris
+   * - Times (abs)
+     - Bike
+     - 1.0
+     - 2.0
+   * - Times (abs)
+     - Natural
+     - -1.0
+     - -0.5
+   * - Times (abs)
+     - Parking
+     - 0
+     - -0.15
+   * - Times (abs)
+     - Pop. Dens.
+     - -0.15
+     - -0.11
+   * - Times (abs)
+     - School dist.
+     - 0.12
+     - 0.06
+   * - Times (abs)
+     - Transfers
+     - -0.31
+     - -0.48
+   * - Times (rel)
+     - Bike
+     - 0
+     - 0.16
+   * -
+     -
+     -
+     -
+   * - Transport
+     - Natural
+     - -0.22
+     - 2.46
+   * - Transport
+     - Parking
+     - 1.7
+     - 1.9
+   * -
+     -
+     -
+     -
+   * - School Dist.
+     - Bike
+     - 0
+     - 0.4
+   * - School Dist.
+     - Natural
+     - -0.12
+     - -0.06
+   * -
+     -
+     -
+     -
+   * - Social
+     - Bike
+     - 0.52
+     - -0.38
+   * - Social
+     - Natural
+     - -0.1
+     - 2.0
+   * - Social
+     - Parking
+     - 0.04
+     - -2.18
+   * - Social
+     - School Dist.
+     - -0.05
+     - -0.25
 
 
 Transport Variables
