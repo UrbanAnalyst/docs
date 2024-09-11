@@ -1,16 +1,16 @@
 1. Introduction
 ###############
 
-This is the documentation for [Urban Analyst (UA)](https://urbananalyst.city).
+This is the documentation for `Urban Analyst (UA) <https://urbananalyst.city>`_.
 Urban Analyst analyses the structure and function of cities across the world.
-Each city can be viewed as an [interactive map](https://urbananalyst.city/maps)
+Each city can be viewed as an `interactive map <https://urbananalyst.city/maps>`_
 displaying several different properties or variables. These include
 socio-demographic conditions and the structure and function of transport
 systems. The platform also analyses relationships between individual variables,
 such as between socio-demographic conditions and frequency of transport
 services, or between distances to nearest schools and access to natural spaces.
 
-UA also provides [statistical comparisons](https://urbananalyst.city/compare)
+UA also provides `statistical comparisons <https://urbananalyst.city/compare>`_
 between all cities, enabling comparisons across all UA cities of single
 variables, as well as relationships between any pair of variables, such as
 transport and socio-demographic disadvantage. 
@@ -27,17 +27,17 @@ the whole city to have infrastructure equivalent to Paris.
 How does it work?
 *****************
 
-Urban Analyst present a variety of [variables](./variables.md) for each city
+Urban Analyst present a variety of :ref:`variables<4. Variables>` for each city
 analysed, as well as relationships between these variables. Values for each
 variable are derived at every street intersection in each city. These values
-are then aggregated into the polygons shown in the ["Map"
-page](https://urbananalyst.city/maps) and
-["Transform"](https://urbananalyst.city/transform) pages, and across entire
-cities for the values shown in the
-["Compare"](https://urbananalyst.city/compare) page. Aggregations are always
-weighted by local population densities, so that all UA values represent values
-*per person* as experienced in each city. Details are provided in the [*Data
-Sources*](./data.md) and [*Software and Algorithms*](./software.md) chapters.
+are then aggregated into the polygons shown in the `"Map" page
+<https://urbananalyst.city/maps>`_ and `"Transform"
+<https://urbananalyst.city/transform>`_ pages, and across entire cities for the
+values shown in the `"Compare" <https://urbananalyst.city/compare>`_ page.
+Aggregations are always weighted by local population densities, so that all UA
+values represent values *per person* as experienced in each city. Details are
+provided in the :ref:`*Data Sources* <5. Data Sources>` and :ref:`*Software and
+Algorithms* <6. Software and Algorithms>` chapters.
 
 How many calculations are involved?
 ***********************************
@@ -99,8 +99,8 @@ not available in any other way.
 Can I access the full data?
 ***************************
 
-Not directly, but feel free to open a [GitHub
-issue](https://github.com/mpadge/UrbanAnalyst/issues) to start a discussion
+Not directly, but feel free to open a `GitHub
+issue <https://github.com/mpadge/UrbanAnalyst/issues>`_ to start a discussion
 about requesting full data sources.
 
 Structure
