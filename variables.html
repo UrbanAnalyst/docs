@@ -1,0 +1,448 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>UA Variables - Urban Analyst</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="intro.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">2.</strong> Overview</a></li><li class="chapter-item expanded "><a href="example.html"><strong aria-hidden="true">3.</strong> Example</a></li><li class="chapter-item expanded "><a href="variables.html" class="active"><strong aria-hidden="true">4.</strong> UA Variables</a></li><li class="chapter-item expanded "><a href="data.html"><strong aria-hidden="true">5.</strong> Data Sources</a></li><li class="chapter-item expanded "><a href="software.html"><strong aria-hidden="true">6.</strong> Software and Algorithms</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Urban Analyst</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="variables"><a class="header" href="#variables">Variables</a></h1>
+<p>All UA variables are measured such that lower or negative values are good,
+whereas higher values are bad. (Exceptions are neutral variables such as
+population density which are nevertheless straightforward to interpret.) For
+example, unemployment or transport times are both better when values are lower.
+Indices of bicycle infrastructure and access to natural spaces are also
+transformed so that lower values indicate better or more of either. In these
+cases, the transformations are simply one minus the respective proportions of
+journeys out to a fixed distance travelled along bicycle infrastructure, or
+through or alongside natural spaces. Values of 0 then reflect 100% of all
+journeys spent on bicycle infrastructure or in natural spaces, while values of
+1 would represent complete absence of either bicycle infrastructure or natural
+spaces.</p>
+<p>Variables are measured for every way, path, or street intersection within each
+city. Values for the maps are aggregated within polygons defined by the
+<em>Socio-demographic variables</em> described in the following sub-section, while
+values within the statistics page are aggregated across entire cities. Unless
+explicitly described otherwise, values of all variables are weighted by
+population density. This means that, for example, distances to nearest schools
+represent average distances that each person must travel to get to school. Full
+descriptions of the calculation of all variables are given in the <a href="./software.html"><em>Software
+and Algorithms</em> chapter</a>.</p>
+<h2 id="socio-demographic-variables"><a class="header" href="#socio-demographic-variables">Socio-demographic variables</a></h2>
+<p>The extent and structure of each city is defined by its "socio-demographic
+variable," or "social variable" for short. These are taken from open-source
+datasets provided by the cities as a series of geographic areas, defined as
+polygonal shapes, and some corresponding measure of socio-demographic
+disadvantage. The cities themselves decide the resolution and extent of these
+polygonal data. These polygons then define the extent and shape of cities
+analysed in Urban Analyst, and the individual polygons into which the map data
+are aggregated.</p>
+<p>Values of these socio-demographic variables are the only aspect that differs
+between different cities. One of the simplest versions is unemployment rate,
+generally measured either as a percentage (0-100), or a proportion (0-1). The
+UA platform selects the most representative measure of general social
+disadvantage provided by each city, and defaults to rates of unemployment only
+where no more comprehensive of integrative measures are openly provided by
+cities.</p>
+<h2 id="travel-variables"><a class="header" href="#travel-variables">Travel Variables</a></h2>
+<p>Urban Analyst provides highly detailed statistics on transport systems. Many of
+these are derived from estimates of times required to travel fixed distances of
+10km. This value is chosen to capture the general efficiency of public
+transport systems. Shorter distances do not sufficiently capture the influence
+of transport modes such as express or long-distance train services, while
+longer distances unfairly penalise smaller cities in which most journeys are
+only of shorter distances.</p>
+<p>Values at this distance of 10km are obtained by following these three steps,
+taking the example statistic of travel times:</p>
+<ol>
+<li>Calculate total travel times from all street intersections to all other
+street intersections within a city.</li>
+<li>Calculate a straight line of "best fit" (a "least squares regression" line)
+which describes how travel times vary with distance.</li>
+<li>Use that line to obtain the "average" value of travel time at the distance
+of 10km.</li>
+</ol>
+<p>Values shown in the maps are aggregated within each polygon of a chosen city,
+while values shown in the statistics page are aggregated over entire cities.</p>
+<p>The remainder of this section describes the five travel variables:</p>
+<ul>
+<li>Absolute travel times</li>
+<li>Relative travel times</li>
+<li>Numbers of transfers</li>
+<li>Intervals between consecutive services</li>
+<li>Compound travel statistic</li>
+</ul>
+<h3 id="absolute-and-relative-travel-times"><a class="header" href="#absolute-and-relative-travel-times">Absolute and Relative Travel Times</a></h3>
+<p>Urban Analyst enables comparisons of travel times between two primary modes of
+transport:</p>
+<ul>
+<li>
+<p><em>Private Automobile.</em> Travel times with private automobile are used as a
+benchmark for measures of travel time using other modes. UA generates
+realistic estimates of private automobile travel times through scaling to
+empirically observed data on actual vehicular travel times. (Calibration
+procedures are implemented and documented in <a href="https://github.com/UrbanAnalyst/ttcalib">this GitHub
+repository</a>.) Importantly, UA
+includes an additional, unique aspect of automobile travel times not
+quantified in any other equivalent system, through an algorithm to accurately
+estimate the likely time required to park a private vehicle, and then to walk
+to a desired destination. These parking times are crucial, as direct travel
+times to many inner-city destinations do not provide realistic estimates of
+actual journey times to locations where it may be impossible to actually park
+a private automobile.</p>
+</li>
+<li>
+<p><em>Multi-Modal Transport.</em> UA's "multi-modal travel times" represent fastest
+possible times taken for journeys from every single point in a city to travel
+10km using any combination of transport modes excluding private automobile.
+The primary modes considered are walking, bicycling, and all available modes
+of public transport within each city. Where it is faster to cycle 10km than
+to take public transport (such as from locations with very poor public
+transport connections, or on the top of long hills where downhill cycling may
+actually be faster), these times will represent the single mode of cycling
+only, but multi-modal times will generally reflect fastest times formed by
+combining multiple modes of transport.</p>
+</li>
+</ul>
+<p>Travel times measured these two ways are then combined to generate the
+following two primary travel time statistics:</p>
+<ul>
+<li>
+<p><em>Absolute travel times</em> as the multi-modal travel times; that is, using any
+mode except private automobile.</p>
+</li>
+<li>
+<p><em>Relative travel times</em> as the ratios of absolute travel times compared with
+equivalent travel times with private automobile. Relative travel times of
+less than one indicate that multi-modal transport is faster than equivalent
+transport with private automobile, while values greater than one indicate
+that private automobile transport is faster.</p>
+</li>
+</ul>
+<h3 id="intervals-and-numbers-of-transfers"><a class="header" href="#intervals-and-numbers-of-transfers">Intervals and Numbers of Transfers</a></h3>
+<p>In addition to travel times, UA also includes the following two additional
+statistics quantifying other aspects of public transport systems. Both are
+measured for every point of origin with a city, with final values again derived
+by following the steps described above to obtain average values of each for all
+trips of 10km distance. Numbers of transfers are thus the average number
+required for all journeys of 10km, while intervals are the required waiting
+times for the next equivalent journey out to that distance.</p>
+<ul>
+<li>
+<p><em>Intervals to Next Service</em> are measured in minutes. For each point of origin
+in a city, this statistic measures the waiting time necessary before
+departing to each destination within a city on the service after the one
+corresponding to the fastest journey. This delayed service may not be fast as
+the original, or it may even be faster in some cases, as the UA algorithms
+also prioritise connections with the fewest possible transfers. It can happen
+that subsequent services are actually faster, yet involve additional
+transfers not required in the originally identified "fastest" service.</p>
+</li>
+<li>
+<p><em>Numbers of Transfers</em> measure the number of transfers necessary for a
+<em>minimal-transfer</em> journey out to a distance of 10km. These
+<em>minimal-transfer</em> journeys are selected to allow for journeys slightly
+slower than absolute fastest journeys (generally by up to 5 minutes) if they
+involve fewer transfers.</p>
+</li>
+</ul>
+<h3 id="the-compound-travel-statistic"><a class="header" href="#the-compound-travel-statistic">The Compound Travel Statistic</a></h3>
+<p>All three of the statistics described above - travel times, intervals, and
+numbers of transfers - are measured such that lower values are more desirable.
+Travel times are then directly multiplied by (a logarithmically-transformed
+version of) intervals between services to generate a "<em>compound travel
+statistic</em>". Low values of this statistic only arise in locations which have
+fast travel times and short intervals between services. Low values may
+accordingly always be interpreted as indicating overall good transport
+services. In contrast, high values may arise through various combinations of
+variables, from extremely high values of one single variable, to less extreme
+combinations of the two variables. It is thus generally not possible to
+directly discern reasons for high values of this compound travel statistic.
+Urban Analyst nevertheless provides direct insight into all individual values,
+as well as all pairwise combinations of values, permitting indirect insight.</p>
+<h2 id="population-density"><a class="header" href="#population-density">Population density</a></h2>
+<p>Population density values are taken directly from the <a href="https://ghsl.jrc.ec.europa.eu/index.php">European Union <em>Global
+Human Settlement Layer</em></a> data,
+aggregated into polygons for maps, or across entire cities for statistics.</p>
+<h2 id="distance-to-nearest-schools"><a class="header" href="#distance-to-nearest-schools">Distance to nearest schools</a></h2>
+<p>Distances to nearest schools are measured in kilometres, as shortest walking
+distances from each point to the nearest school. These are network distances,
+and not simple straight line distances. A single value is ascribed to each
+point within a city, and all points aggregated after weighting by local
+population densities.</p>
+<h2 id="bicycle-infrastructure"><a class="header" href="#bicycle-infrastructure">Bicycle infrastructure</a></h2>
+<p>The bicycle infrastructure index is derived from a measure of the proportion of
+all possible journeys from each point out to a fixed distance of five
+kilometres that travel along dedicated bicycle infrastructure. To conform with
+all other UA variables, the index is one minus this proportion, so that low
+values reflect high proportions of bicycle infrastructure. Values of zero would
+then reflect all journeys taken along dedicated bicycle paths, while values of
+one would mean a complete absence of dedicated bicycle infrastructure.</p>
+<p>Travel is calculated using a bicycle-specific algorithm that only extends along
+ways unsuitable for bicycle travel where no alternatives exist. The weighting
+scheme used adds total distances for all portions of travel along designated
+cycleways that are separated from vehicular traffic. Portions of trips
+extending along other types of ways are added with "half weightings" so, for
+example, one kilometre along these types is equivalent to two kilometres on
+dedicated bicycle ways. These "half-weight" ways include residential or
+"living" streets, unpaved tracks, and bicycle lanes directly alongside
+automobile lanes. A third category of ways are weighted at one-quarter,
+including footpaths and general pedestrian areas which permit bicycle travel.
+The precise weighting scheme can be viewed in <a href="https://github.com/UrbanAnalyst/uaengine/blob/main/R/bicycle-infrastructure.R">this source code
+file</a>.</p>
+<p>The weighted sums of all distances along these types of ways traversed out to
+five kilometres from any given point are then divided by the sum of all
+distances travelled regardless of way type to give a ratio between zero and
+one. This bicycle infrastructure index is then one minus this value.</p>
+<h2 id="natural-space-accessibility"><a class="header" href="#natural-space-accessibility">Natural space accessibility</a></h2>
+<p>Natural space accessibility is measured in a similar way to the bicycle
+infrastructure variable, except it quantifies proportions of walking distances
+out to maximal distances of two kilometres that traverse natural spaces. This
+provides a more realistic measure of natural space than simple aggregations of
+areas, because it measures the ability of people to directly walk from every
+point in a city through or alongside nearby natural spaces.</p>
+<p>Moreover, aggregate metrics do not generally capture the ability of people to
+actually access natural spaces. A park may, for example, have restricted or
+even private access. This would count as a natural space in a simply aggregate
+metric, yet not in UA because access restrictions are taken into account in the
+routing algorithms.</p>
+<p>The algorithm also measures lengths of ways walked adjacent to water -
+so-called "blue space", providing a comprehensive metric of the actual ability
+to access natural spaces from every point in a city. A natural space index of
+zero would represent an entire city of natural space, with no built structures
+at all, while a value of one would represent a complete absence of natural
+spaces.</p>
+<h2 id="parking-index"><a class="header" href="#parking-index">Parking index</a></h2>
+<p>The parking index is the ratio of numbers of nearby parking spaces to total
+volumes of nearby buildings. The parking statistic is calculated for each point
+by adding all nearby parking spaces with a weighting scheme that decreases
+exponentially with distance, so that nearby parking spaces count more than
+parking spaces that are farther away. Building volumes are also aggregated
+using an identical weighting scheme. The parking index at each point is then
+the ratio of the sum of distance-weighted numbers of parking spaces to the sum
+of distance-weighted total building volumes.</p>
+<p>All publicly accessible parking spaces are counted, including on-street
+parking, open parking lots, and multi-level parking garages. Building volumes
+are aggregated regardless of type or purpose.</p>
+<h2 id="housing-value-and-rent"><a class="header" href="#housing-value-and-rent">Housing value and rent</a></h2>
+<p>For USA cities only, additional statistics are provided for average housing
+value per room, and average rental per room, both in US dollars.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="example.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="data.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="example.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="data.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
