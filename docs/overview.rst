@@ -25,6 +25,7 @@ pages.
 ----
 
 Summarise
+*********
 
 The `Summarise page <https://urbananalyst.city/summarise>`_ provides an overview
 of the general statistical properties of any chosen UA city. Statistics for
@@ -50,7 +51,8 @@ page <https://urbananalyst.city/transform>`_.
 
 ----
 
-## Compare
+Compare
+*******
 
 The `Compare page <https://urbananalyst.city/compare>`_ enables comparisons
 between all UA cities, both in terms of single variables and relationships
@@ -61,7 +63,8 @@ generally better than higher values. The control panel includes an "Explain
 Layer" button which opens a text panel explaining details of the chosen
 variable.
 
-### Single and Paired Variables
+Single and Paired Variables
+***************************
 
 The control panel of the `compare page <https://urbananalyst.city/compare>`_
 includes an option to select "paired" variables. The resultant graphs then
@@ -80,7 +83,8 @@ conditions."
 
 ----
 
-## Map
+Map
+***
 
 The `Map page <https://urbananalyst.city/map>`_ shows interactive maps for each
 city, with values for all UA variables displayed in small polygons. These
@@ -101,7 +105,8 @@ button which opens a text panel explaining details of the chosen variable.
 
 ----
 
-## Transform
+Transform
+*********
 
 The `Transform page <https://urbananalyst.city/transform>`_ enables the
 properties of any chosen city to be transformed to reflect equivalent
@@ -128,7 +133,8 @@ would be necessary for the city to have the same distribution as that of the
 target city. The transformation algorithm is described in detail in the final
 :ref:`*Software and Algorithms* chapter<6. Software and Algorithms>`.
 
-### Extra Layers
+Extra Layers
+============
 
 The `Transform page <https://urbananalyst.city/transform>`_ includes an
 additional button labelled *Extra Layers*. The transformations described above
@@ -150,7 +156,8 @@ thus change for each choice of target city and focal layer. It may be necessary
 to click on the "Reset" button in the *Extra Layers* panel to update this
 default selection after changing any of these options.
 
-### Output Layer
+Output Layer
+============
 
 Finally, the `Transform page <https://urbananalyst.city/transform>`_ also has an
 *Output Layer* option at the bottom of the control panel. This enables results
