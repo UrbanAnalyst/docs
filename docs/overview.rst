@@ -36,9 +36,9 @@ strengths of relationship between all pairs of statistics.
 
 The values described in this initial part of the `Summarise
 page <https://urbananalyst.city/summarise>`_ indicate which statistics might be
-particularly worth examining in both the
-`Compare <https://urbananalyst.city/compare>`_ and the `Map
- <https://urbananalyst.city/map>`_ pages.
+particularly worth examining in both the `Compare
+<https://urbananalyst.city/compare>`_ and the 
+`Map <https://urbananalyst.city/map>`_ pages.
 
 The `Summarise page <https://urbananalyst.city/summarise>`_ also includes a
 section describing the best "Target city" for each chosen city. As explained
