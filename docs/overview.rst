@@ -1,21 +1,21 @@
 2. Overview
 ###########
 
-This chapter provides an overview of the four main pages of the [Urban Analyst
-platform](https://urbananalyst.city):
+This chapter provides an overview of the four main pages of the `Urban Analyst
+platform <https://urbananalyst.city>`_:
 
-- The [summarise page](https://urbananalyst.city/summarise) provides summary
+- The `summarise page <https://urbananalyst.city/summarise>`_ provides summary
   overviews for each city of key statistical properties and relationships with
   other cities;
-- The [compare page](https://urbananalyst.city/compare) compares aggregate
+- The `compare page <https://urbananalyst.city/compare>`_ compares aggregate
   statistics for all cities;
-- The [map page](https://urbananalyst.city/maps) shows interactive maps for
+- The `map page <https://urbananalyst.city/maps>`_ shows interactive maps for
   each city;
-- The [transform page](https://urbananalyst.city/transform) shows the effect of
+- The `transform page <https://urbananalyst.city/transform>`_ shows the effect of
   transforming any chosen city to become more like other cities.
 
-The best place to start is the [Summarise
-page](https://urbananalyst.city/summarise). The summary for any chosen city
+The best place to start is the `Summarise
+page <https://urbananalyst.city/summarise>`_. The summary for any chosen city
 will indicate which properties of the other pages are most important. Each of
 the latter three pages also includes a pop-up "guided tour" explaining the key
 features. These tours will automatically start the first time a page is opened,
@@ -24,35 +24,35 @@ pages.
 
 ----
 
-## Summarise
+Summarise
 
-The [Summarise page](https://urbananalyst.city/summarise) provides an overview
+The `Summarise page <https://urbananalyst.city/summarise>`_ provides an overview
 of the general statistical properties of any chosen UA city. Statistics for
 each chosen city are compared with those for all other cities, and textual
 summaries generated for all statistics which are significantly different.
 Summaries are provided not just for individual statistics, but for the
 strengths of relationship between all pairs of statistics.
 
-The values described in this initial part of the [Summarise
-page](https://urbananalyst.city/summarise) indicate which statistics might be
+The values described in this initial part of the `Summarise
+page <https://urbananalyst.city/summarise>`_ indicate which statistics might be
 particularly worth examining in both the
-[Compare](https://urbananalyst.city/compare) and the [Map
-](https://urbananalyst.city/map) pages.
+`Compare <https://urbananalyst.city/compare>`_ and the `Map
+ <https://urbananalyst.city/map>`_ pages.
 
-The [Summarise page](https://urbananalyst.city/summarise) also includes a
+The `Summarise page <https://urbananalyst.city/summarise>`_ also includes a
 section describing the best "Target city" for each chosen city. As explained
 there, the best target city is the city which is best in all the ways that the
 chosen city is worse than average. This target city, and corresponding
 variables described there, indicate which cities and variables might be
-particularly worth examining in the [Transform
-page](https://urbananalyst.city/transform).
+particularly worth examining in the `Transform
+page <https://urbananalyst.city/transform>`_.
 
 
 ----
 
 ## Compare
 
-The [Compare page](https://urbananalyst.city/compare) enables comparisons
+The `Compare page <https://urbananalyst.city/compare>`_ enables comparisons
 between all UA cities, both in terms of single variables and relationships
 between any selected pair of variables. A pull-down panel enables each variable
 or "layer" to be selected. The page then displays a graphical representation of
@@ -63,7 +63,7 @@ variable.
 
 ### Single and Paired Variables
 
-The control panel of the [compare page](https://urbananalyst.city/compare)
+The control panel of the `compare page <https://urbananalyst.city/compare>`_
 includes an option to select "paired" variables. The resultant graphs then
 display the strength of relationship between any chosen *pair* of variables.
 For example, choosing social index and the nature index will display the
@@ -82,13 +82,13 @@ conditions."
 
 ## Map
 
-The [Map page](https://urbananalyst.city/map) shows interactive maps for each
+The `Map page <https://urbananalyst.city/map>`_ shows interactive maps for each
 city, with values for all UA variables displayed in small polygons. These
 polygons are defined by city-specific assessments of spatial disadvantage.
 Berlin, for example, regularly measures a compound index of social disadvantage
 aggregated into XX polygons. The map for Berlin uses these polygons provided by
 the city to aggregate all measured variables. The variables are described in a
-[subsequent chapter](./variables.md).
+:ref:`subsequent chapter<4. Variables>`.
 
 Details of the polygons for each city can be seen by selecting the "Social"
 layer in the Map page and then clicking on the "Explain Layer" button.
@@ -103,20 +103,20 @@ button which opens a text panel explaining details of the chosen variable.
 
 ## Transform
 
-The [Transform page](https://urbananalyst.city/transform) enables the
+The `Transform page <https://urbananalyst.city/transform>`_ enables the
 properties of any chosen city to be transformed to reflect equivalent
 properties of some chosen "target" city. This page is best explained by an
-example. Looking at the [Compare page](https://urbananalyst.city/compare) for
+example. Looking at the `Compare page <https://urbananalyst.city/compare>`_ for
 the "bike index" shows that Berlin has relatively poor bicycle infrastructure,
 while Paris is a very good city for cyclists. The
-[Transform page](https://urbananalyst.city/transform) can be used to visualise
+`Transform page <https://urbananalyst.city/transform>`_ can be used to visualise
 how Berlin could best transform its current bicycle infrastructure to have an
 overall distribution across the whole city equivalent to Paris. Conversely,
 Paris has poorer access to natural spaces than Berlin, and the page could also
 be used to examine how Paris could best transform its access to natural spaces
 so that it functioned more like Berlin.
 
-Urban Analyst values displayed in the [Map page](https://urbananalyst.city/map)
+Urban Analyst values displayed in the `Map page <https://urbananalyst.city/map>`_
 are aggregated from generally hundreds of thousands of individual calculations
 at every street junction in each city. For the chosen variable, subsets of
 these individual data points are sampled from each city, and the statistical
@@ -126,16 +126,16 @@ target city. These values are then aggregated into the polygons defined for the
 city, to produce a visual representation of the least-cost transformation that
 would be necessary for the city to have the same distribution as that of the
 target city. The transformation algorithm is described in detail in the final
-[*Software and Algorithms* chapter](./software.md).
+:ref:`*Software and Algorithms* chapter<6. Software and Algorithms>`.
 
 ### Extra Layers
 
-The [Transform page](https://urbananalyst.city/transform) includes an
+The `Transform page <https://urbananalyst.city/transform>`_ includes an
 additional button labelled *Extra Layers*. The transformations described above
 described transforming single layers or variables. The *Extra Layers* panel
 enables transformations not just of single chosen variables, but also of their
-relationships with other variables. Examining the [Compare
-page](https://urbananalyst.city/compare), for example, shows that not only does
+relationships with other variables. Examining the `Compare
+page <https://urbananalyst.city/compare>`_, for example, shows that not only does
 Paris provide poorer access to natural spaces than Berlin, but also that Berlin
 has a better relationship between access to natural spaces and social
 disadvantage. (This can be seen by clicking on the "*Paired*" layer option and
@@ -152,7 +152,7 @@ default selection after changing any of these options.
 
 ### Output Layer
 
-Finally, the [Transform page](https://urbananalyst.city/transform) also has an
+Finally, the `Transform page <https://urbananalyst.city/transform>`_ also has an
 *Output Layer* option at the bottom of the control panel. This enables results
 of the transformation algorithm to be displayed in one of four ways:
 
