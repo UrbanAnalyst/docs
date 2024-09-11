@@ -31,7 +31,8 @@ of variables, and between different cities. Two additional variables are
 included for cities from the USA, enabling even more pairwise comparisons for
 these cities.
 
-## Individual Variables.
+Individual Variables
+********************
 
 The following table summarises the values of the individual variables for each
 city (each measured on its own distinct scale).
@@ -80,7 +81,8 @@ calculates this in different ways, and values are not comparable between
 cities. Values are nevertheless standardised for the pairwise comparisons, and
 strengths of relationship described there remain valid.
 
-### Transport
+Transport
+=========
 
 The "Transport Absolute" variable measures the absolute time (in minutes)
 required to travel a distance of 10km from each point in a city, using any
@@ -129,7 +131,8 @@ times by intervals between services. Low values of this statistic reflect fast
 and frequent transport. This statistic also indicates considerably superior
 service in Paris compared with Berlin.
 
-### Other Variables
+Other Variables
+===============
 
 - "School Distance": Paris has notably shorter distances from each point in the
   city to the nearest school than does Berlin.
@@ -157,7 +160,8 @@ service in Paris compared with Berlin.
   to park private automobiles compared with the other UA cities, with Berlin
   notably less than Paris.
 
-## Relationships between variables
+Relationships between variables
+*******************************
 
 This section considers relationships between each individual variable and all
 other variables. All strengths of relationship shown in the "Stats" page are
@@ -194,7 +198,8 @@ relationships for each city:
 | Social | School dist |  -0.05 |  -0.25 |
 
 
-### Transport Variables
+Transport Variables
+===================
 
 This sub-section only considers transport times, both in absolute and relative
 sense. The other transport variables, of intervals and numbers of transfers,
@@ -238,7 +243,8 @@ transport also tend to have more automobile parking spaces, reflecting planning
 decisions that associate use of public transport with the driving of private
 automobiles. No such relationship appears to exist in Berlin.
 
-### Non-Transport Variables
+Non-Transport Variables
+=======================
 
 Shorter school distances are positively associated with the bicycle index in
 Paris, indicating a positive association between good bicycle infrastructure
@@ -278,9 +284,11 @@ spaces, or conversely that socially disadvantaged parts of the city offer
 relatively few automobile parking spaces. The relationship in Berlin is, in
 contrast, slightly positive.
 
-## Conclusions
+Conclusions
+***********
 
-### Lessons for Berlin
+Lessons for Berlin
+==================
 
 Paris's transport system is considerably faster and more frequent.
 Nevertheless, it also involves greater numbers of transfers, suggesting that
@@ -319,7 +327,8 @@ spaces is only weakly related to social advantage. This provides robust
 evidence for Berlin to appreciate its natural spaces, and to ensure that they
 remain accessible for everybody.
 
-### Lessons for Paris
+Lessons for Paris
+=================
 
 Paris's transport system is notably better than Berlin's in almost all ways
 except for the number of transfers necessary to travel equivalent distances.
