@@ -27,7 +27,7 @@ the whole city to have infrastructure equivalent to Paris.
 How does it work?
 *****************
 
-Urban Analyst present a variety of :ref:`variables<UA Variables>` for each
+Urban Analyst presents a variety of :ref:`variables<UA Variables>` for each
 city analysed, as well as relationships between these variables. Values for
 each variable are derived at every street intersection in each city. These
 values are then aggregated into the polygons shown in the `"Map" page
