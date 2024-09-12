@@ -14,7 +14,7 @@ The best place to start is the |summ-page|. The summary for any chosen city
 will indicate which properties of the other pages are most important. Each of
 the latter three pages also includes a pop-up "guided tour" explaining the key
 features. These tours will automatically start the first time a page is opened,
-or can be manually opened by clicking on the "Help" button on any of the main
+or can be manually opened by clicking the "Help" button on any of the main
 pages.
 
 .. |summ-page| raw:: html
