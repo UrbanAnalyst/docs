@@ -21,8 +21,12 @@ values within the statistics page are aggregated across entire cities. Unless
 explicitly described otherwise, values of all variables are weighted by
 population density. This means that, for example, distances to nearest schools
 represent average distances that each person must travel to get to school. Full
-descriptions of the calculation of all variables are given in the :ref:`*Software
-and Algorithms* chapter<Software and Algorithms>`.
+descriptions of the calculation of all variables are given in the |sw-chapter|.
+
+.. |sw-chapter| raw:: html
+
+   <a href="https://docs.urbananalyst.city/software.html">
+   <em>Software and Algorithms</em> chapter</a>
 
 Socio-demographic variables
 ***************************
