@@ -27,10 +27,10 @@ the whole city to have infrastructure equivalent to Paris.
 How does it work?
 *****************
 
-Urban Analyst present a variety of :ref:`variables<4. Variables>` for each city
-analysed, as well as relationships between these variables. Values for each
-variable are derived at every street intersection in each city. These values
-are then aggregated into the polygons shown in the `"Map" page
+Urban Analyst present a variety of :ref:`variables<4. UA Variables>` for each
+city analysed, as well as relationships between these variables. Values for
+each variable are derived at every street intersection in each city. These
+values are then aggregated into the polygons shown in the `"Map" page
 <https://urbananalyst.city/maps>`_ and `"Transform"
 <https://urbananalyst.city/transform>`_ pages, and across entire cities for the
 values shown in the `"Compare" <https://urbananalyst.city/compare>`_ page.
@@ -111,7 +111,7 @@ This documentation includes the following five chapters:
 1. This introduction
 2. :ref:`Overview<2. Overview>`: A brief overview of the main components of Urban Analyst.
 3. :ref:`Example<3. Example>`: A walk-through example comparison between Berlin, Germany and Paris, France, illustrating the kinds of comparisons enabled by the Urban Analyst platform.
-4. :ref:`UA Variables<4. Variables>`: Providing descriptions of all variables included in the Urban Analyst platform.
+4. :ref:`UA Variables<4. UA Variables>`: Providing descriptions of all variables included in the Urban Analyst platform.
 5. :ref:`Data Sources<5. Data Sources>`: Providing descriptions of all data sources used to derive these variables.
 6. :ref:`Software and Algorithms<6. Software and Algorithms>`: Providing descriptions of, and links to, all software used to generate the UA variables.
 

@@ -92,7 +92,7 @@ polygons are defined by city-specific assessments of spatial disadvantage.
 Berlin, for example, regularly measures a compound index of social disadvantage
 aggregated into XX polygons. The map for Berlin uses these polygons provided by
 the city to aggregate all measured variables. The variables are described in a
-:ref:`subsequent chapter<4. Variables>`.
+:ref:`subsequent chapter<4. UA Variables>`.
 
 Details of the polygons for each city can be seen by selecting the "Social"
 layer in the Map page and then clicking on the "Explain Layer" button.
