@@ -15,12 +15,12 @@ This is the documentation of `the Urban Analyst platform
    :numbered:
    :caption: Contents
 
-   intro.rst
-   overview.rst
-   example.rst
-   variables.rst
-   data.rst
-   software.rst
+   content/intro.rst
+   content/overview.rst
+   content/example.rst
+   content/variables.rst
+   content/data.rst
+   content/software.rst
 
 
 Following the introduction, the :ref:`second chapter<Overview>` provides a
