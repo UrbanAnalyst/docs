@@ -1,4 +1,5 @@
-# Variables
+4. UA Variables
+###############
 
 All UA variables are measured such that lower or negative values are good,
 whereas higher values are bad. (Exceptions are neutral variables such as
@@ -20,10 +21,11 @@ values within the statistics page are aggregated across entire cities. Unless
 explicitly described otherwise, values of all variables are weighted by
 population density. This means that, for example, distances to nearest schools
 represent average distances that each person must travel to get to school. Full
-descriptions of the calculation of all variables are given in the [*Software
-and Algorithms* chapter](./software.md).
+descriptions of the calculation of all variables are given in the :ref:`*Software
+and Algorithms* chapter<6. Software and Algorithms>`.
 
-## Socio-demographic variables
+Socio-demographic variables
+***************************
 
 The extent and structure of each city is defined by its "socio-demographic
 variable," or "social variable" for short. These are taken from open-source
@@ -42,7 +44,8 @@ disadvantage provided by each city, and defaults to rates of unemployment only
 where no more comprehensive of integrative measures are openly provided by
 cities.
 
-## Travel Variables
+Travel Variables
+****************
 
 Urban Analyst provides highly detailed statistics on transport systems. Many of
 these are derived from estimates of times required to travel fixed distances of
@@ -73,7 +76,8 @@ The remainder of this section describes the five travel variables:
 - Intervals between consecutive services
 - Compound travel statistic
 
-### Absolute and Relative Travel Times
+Absolute and Relative Travel Times
+==================================
 
 Urban Analyst enables comparisons of travel times between two primary modes of
 transport:
@@ -82,8 +86,8 @@ transport:
   benchmark for measures of travel time using other modes. UA generates
   realistic estimates of private automobile travel times through scaling to
   empirically observed data on actual vehicular travel times. (Calibration
-  procedures are implemented and documented in [this GitHub
-  repository](https://github.com/UrbanAnalyst/ttcalib).) Importantly, UA
+  procedures are implemented and documented in `this GitHub
+  repository <https://github.com/UrbanAnalyst/ttcalib>`_.) Importantly, UA
   includes an additional, unique aspect of automobile travel times not
   quantified in any other equivalent system, through an algorithm to accurately
   estimate the likely time required to park a private vehicle, and then to walk
@@ -115,7 +119,8 @@ following two primary travel time statistics:
   transport with private automobile, while values greater than one indicate
   that private automobile transport is faster.
 
-### Intervals and Numbers of Transfers
+Intervals and Numbers of Transfers
+==================================
 
 In addition to travel times, UA also includes the following two additional
 statistics quantifying other aspects of public transport systems. Both are
@@ -140,7 +145,8 @@ times for the next equivalent journey out to that distance.
   slower than absolute fastest journeys (generally by up to 5 minutes) if they
   involve fewer transfers.
 
-### The Compound Travel Statistic
+The Compound Travel Statistic
+=============================
 
 All three of the statistics described above - travel times, intervals, and
 numbers of transfers - are measured such that lower values are more desirable.
@@ -156,13 +162,15 @@ directly discern reasons for high values of this compound travel statistic.
 Urban Analyst nevertheless provides direct insight into all individual values,
 as well as all pairwise combinations of values, permitting indirect insight.
 
-## Population density
+Population density
+******************
 
-Population density values are taken directly from the [European Union *Global
-Human Settlement Layer*](https://ghsl.jrc.ec.europa.eu/index.php) data,
+Population density values are taken directly from the `European Union *Global
+Human Settlement Layer* <https://ghsl.jrc.ec.europa.eu/index.php>`_ data,
 aggregated into polygons for maps, or across entire cities for statistics.
 
-## Distance to nearest schools
+Distance to nearest schools
+***************************
 
 Distances to nearest schools are measured in kilometres, as shortest walking
 distances from each point to the nearest school. These are network distances,
@@ -170,7 +178,8 @@ and not simple straight line distances. A single value is ascribed to each
 point within a city, and all points aggregated after weighting by local
 population densities.
 
-## Bicycle infrastructure
+Bicycle infrastructure
+**********************
 
 The bicycle infrastructure index is derived from a measure of the proportion of
 all possible journeys from each point out to a fixed distance of five
@@ -190,15 +199,16 @@ dedicated bicycle ways. These "half-weight" ways include residential or
 "living" streets, unpaved tracks, and bicycle lanes directly alongside
 automobile lanes. A third category of ways are weighted at one-quarter,
 including footpaths and general pedestrian areas which permit bicycle travel.
-The precise weighting scheme can be viewed in [this source code
-file](https://github.com/UrbanAnalyst/uaengine/blob/main/R/bicycle-infrastructure.R).
+The precise weighting scheme can be viewed in `this source code file
+<https://github.com/UrbanAnalyst/uaengine/blob/main/R/bicycle-infrastructure.R>`_.
 
 The weighted sums of all distances along these types of ways traversed out to
 five kilometres from any given point are then divided by the sum of all
 distances travelled regardless of way type to give a ratio between zero and
 one. This bicycle infrastructure index is then one minus this value.
 
-## Natural space accessibility
+Natural space accessibility
+***************************
 
 Natural space accessibility is measured in a similar way to the bicycle
 infrastructure variable, except it quantifies proportions of walking distances
@@ -220,7 +230,8 @@ zero would represent an entire city of natural space, with no built structures
 at all, while a value of one would represent a complete absence of natural
 spaces.
 
-## Parking index
+Parking index
+*************
 
 The parking index is the ratio of numbers of nearby parking spaces to total
 volumes of nearby buildings. The parking statistic is calculated for each point
@@ -235,7 +246,8 @@ All publicly accessible parking spaces are counted, including on-street
 parking, open parking lots, and multi-level parking garages. Building volumes
 are aggregated regardless of type or purpose.
 
-## Housing value and rent
+Housing value and rent
+**********************
 
 For USA cities only, additional statistics are provided for average housing
 value per room, and average rental per room, both in US dollars.

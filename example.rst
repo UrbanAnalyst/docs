@@ -1,7 +1,8 @@
-# Example
+3. Example
+##########
 
-This chapter demonstrates most of the capabilities of the [Urban Analyst
-platform](https://urbananalyst.city) through exploring comparisons between the
+This chapter demonstrates most of the capabilities of the `Urban Analyst
+platform <https://urbananalyst.city>`_ through exploring comparisons between the
 cities of Paris, France, and Berlin, Germany. It is important to remember
 throughout that lower values in all UA statistics are always better. Values
 are also weighted by local population densities. This is important because, for
@@ -21,8 +22,8 @@ any given city.
 
 This comparison starts by stepping through each variable to describe kinds of
 information able to be extracted, before examining pairwise relationships
-between these variables, and concluding with a general summary. The [Urban
-Analyst platform](https://urbananalyst.city) currently measures 11 variables,
+between these variables, and concluding with a general summary. The `Urban
+Analyst platform <https://urbananalyst.city>`_ currently measures 11 variables,
 along with strengths of relationship between all paired combinations of these.
 This amounts to 11 * (11 - 1) / 2 = 55 pairwise combinations. Strengths of
 relationship are standardised, so are comparable throughout between all pairs
@@ -30,23 +31,49 @@ of variables, and between different cities. Two additional variables are
 included for cities from the USA, enabling even more pairwise comparisons for
 these cities.
 
-## Individual Variables.
+Individual Variables
+********************
 
 The following table summarises the values of the individual variables for each
 city (each measured on its own distinct scale).
 
-| Variable | Berlin | Paris |
-|:----:|:---------|:---------|
-| Times (abs; min) | 40.9 | 39.5 |
-| Times (rel) | 1.09 | 1.03 |
-| Num. Transfers | 0.9 | 1.5 |
-| Intervals (min) | 6.9 | 4.9 |
-| Transport | 33.2 | 25.5 |
-| Pop. Dens. | 3 | 3 |
-| School Dist (m) | 338 | 186 |
-| Bike Index | 0.81 | 0.76 |
-| Nature Index | 0.88 | 0.93 |
-| Parking | 1.32 | 1.55 |
+.. list-table:: UA Variables
+   :widths: 50 25 25
+   :header-rows: 1
+
+   * - Variable
+     - Berlin
+     - Paris
+   * - Times (abs; min) 
+     - 40.9 
+     - 39.5
+   * - Times (rel) 
+     - 1.09 
+     - 1.03
+   * - Num. Transfers 
+     - 0.9 
+     - 1.5
+   * - Intervals (min) 
+     - 6.9 
+     - 4.9
+   * - Transport 
+     - 33.2 
+     - 25.5
+   * - Pop. Dens. 
+     - 3 
+     - 3
+   * - School Dist (m) 
+     - 338 
+     - 186
+   * - Bike Index 
+     - 0.81 
+     - 0.76
+   * - Nature Index 
+     - 0.88 
+     - 0.93
+   * - Parking 
+     - 1.32 
+     - 1.55
 
 
 Social disadvantage is also quantified for all cities. However, each city
@@ -54,7 +81,8 @@ calculates this in different ways, and values are not comparable between
 cities. Values are nevertheless standardised for the pairwise comparisons, and
 strengths of relationship described there remain valid.
 
-### Transport
+Transport
+=========
 
 The "Transport Absolute" variable measures the absolute time (in minutes)
 required to travel a distance of 10km from each point in a city, using any
@@ -103,7 +131,8 @@ times by intervals between services. Low values of this statistic reflect fast
 and frequent transport. This statistic also indicates considerably superior
 service in Paris compared with Berlin.
 
-### Other Variables
+Other Variables
+===============
 
 - "School Distance": Paris has notably shorter distances from each point in the
   city to the nearest school than does Berlin.
@@ -131,7 +160,8 @@ service in Paris compared with Berlin.
   to park private automobiles compared with the other UA cities, with Berlin
   notably less than Paris.
 
-## Relationships between variables
+Relationships between variables
+*******************************
 
 This section considers relationships between each individual variable and all
 other variables. All strengths of relationship shown in the "Stats" page are
@@ -146,29 +176,90 @@ not interpreted in the following sub-sections.
 The following table summarises the values of the strongest pairwise
 relationships for each city:
 
-| Variable1 | Variable2 | Berlin | Paris |
-|:------:|:----:|:---------|:---------|
-| Times (abs) | Bike |  1.0 |  2.0 |
-| Times (abs) | Natural |  -1.0 |  -0.5 |
-| Times (abs) | Parking |  0 |  -0.15 |
-| Times (abs) | Pop. Dens. |  -0.15 |  -0.11 |
-| Times (abs) | School dist |  0.12 |  0.06 |
-| Times (abs) | Transfers |  -0.31 |  -0.48 |
-| Times (rel) | Bike |  0 |  0.16 |
-| | | |
-| Transport | Natural |  -0.22 |  2.46 |
-| Transport | Parking |  1.7 |  1.9 |
-| | | |
-| School dist | Bike | 0  |  0.4 |
-| School dist | Natural |  -0.12 |  -0.06 |
-| | | |
-| Social | Bike |  0.52 |  -0.38 |
-| Social | Natural |  -0.1 |  2.0 |
-| Social | Parking |  0.04 |  -2.18 |
-| Social | School dist |  -0.05 |  -0.25 |
+.. list-table:: Pairwise Relationships between Variables
+   :widths: 30 30 20 20
+   :header-rows: 1
+
+   * - Variable 1
+     - Variable 2
+     - Berlin
+     - Paris
+   * - Times (abs)
+     - Bike
+     - 1.0
+     - 2.0
+   * - Times (abs)
+     - Natural
+     - -1.0
+     - -0.5
+   * - Times (abs)
+     - Parking
+     - 0
+     - -0.15
+   * - Times (abs)
+     - Pop. Dens.
+     - -0.15
+     - -0.11
+   * - Times (abs)
+     - School dist.
+     - 0.12
+     - 0.06
+   * - Times (abs)
+     - Transfers
+     - -0.31
+     - -0.48
+   * - Times (rel)
+     - Bike
+     - 0
+     - 0.16
+   * -
+     -
+     -
+     -
+   * - Transport
+     - Natural
+     - -0.22
+     - 2.46
+   * - Transport
+     - Parking
+     - 1.7
+     - 1.9
+   * -
+     -
+     -
+     -
+   * - School Dist.
+     - Bike
+     - 0
+     - 0.4
+   * - School Dist.
+     - Natural
+     - -0.12
+     - -0.06
+   * -
+     -
+     -
+     -
+   * - Social
+     - Bike
+     - 0.52
+     - -0.38
+   * - Social
+     - Natural
+     - -0.1
+     - 2.0
+   * - Social
+     - Parking
+     - 0.04
+     - -2.18
+   * - Social
+     - School Dist.
+     - -0.05
+     - -0.25
 
 
-### Transport Variables
+Transport Variables
+===================
 
 This sub-section only considers transport times, both in absolute and relative
 sense. The other transport variables, of intervals and numbers of transfers,
@@ -212,7 +303,8 @@ transport also tend to have more automobile parking spaces, reflecting planning
 decisions that associate use of public transport with the driving of private
 automobiles. No such relationship appears to exist in Berlin.
 
-### Non-Transport Variables
+Non-Transport Variables
+=======================
 
 Shorter school distances are positively associated with the bicycle index in
 Paris, indicating a positive association between good bicycle infrastructure
@@ -252,9 +344,11 @@ spaces, or conversely that socially disadvantaged parts of the city offer
 relatively few automobile parking spaces. The relationship in Berlin is, in
 contrast, slightly positive.
 
-## Conclusions
+Conclusions
+***********
 
-### Lessons for Berlin
+Lessons for Berlin
+==================
 
 Paris's transport system is considerably faster and more frequent.
 Nevertheless, it also involves greater numbers of transfers, suggesting that
@@ -293,7 +387,8 @@ spaces is only weakly related to social advantage. This provides robust
 evidence for Berlin to appreciate its natural spaces, and to ensure that they
 remain accessible for everybody.
 
-### Lessons for Paris
+Lessons for Paris
+=================
 
 Paris's transport system is notably better than Berlin's in almost all ways
 except for the number of transfers necessary to travel equivalent distances.
