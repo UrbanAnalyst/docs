@@ -1,14 +1,14 @@
 Introduction
 ###############
 
-This is the documentation for `Urban Analyst (UA) <https://urbananalyst.city>`_.
-Urban Analyst analyses the structure and function of cities across the world.
-Each city can be viewed as an `interactive map <https://urbananalyst.city/maps>`_
-displaying several different properties or variables. These include
-socio-demographic conditions and the structure and function of transport
-systems. The platform also analyses relationships between individual variables,
-such as between socio-demographic conditions and frequency of transport
-services, or between distances to nearest schools and access to natural spaces.
+`Urban Analyst (UA) <https://urbananalyst.city>`_ analyses the structure and
+function of cities across the world. Each city can be viewed as an `interactive
+map <https://urbananalyst.city/maps>`_ displaying several different properties
+or variables. These include socio-demographic conditions and the structure and
+function of transport systems. The platform also analyses relationships between
+individual variables, such as between socio-demographic conditions and
+frequency of transport services, or between distances to nearest schools and
+access to natural spaces.
 
 UA also provides `statistical comparisons <https://urbananalyst.city/compare>`_
 between all cities, enabling comparisons across all UA cities of single
@@ -102,18 +102,3 @@ Can I access the full data?
 Not directly, but feel free to open a `GitHub
 issue <https://github.com/mpadge/UrbanAnalyst/issues>`_ to start a discussion
 about requesting full data sources.
-
-Structure
-*********
-
-This documentation includes the following five chapters:
-
-1. This introduction
-2. :ref:`Overview<Overview>`: A brief overview of the main components of Urban Analyst.
-3. :ref:`Example<Example>`: A walk-through example comparison between Berlin, Germany and Paris, France, illustrating the kinds of comparisons enabled by the Urban Analyst platform.
-4. :ref:`UA Variables<UA Variables>`: Providing descriptions of all variables included in the Urban Analyst platform.
-5. :ref:`Data Sources<Data Sources>`: Providing descriptions of all data sources used to derive these variables.
-6. :ref:`Software and Algorithms<Software and Algorithms>`: Providing descriptions of, and links to, all software used to generate the UA variables.
-
-Contributions to, or questions regarding, this documentation, are welcome at
-`this GitHub repository <https://github.com/UrbanAnalyst/docs>`_.
