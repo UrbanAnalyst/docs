@@ -1,4 +1,4 @@
-4. Variables
+4. UA Variables
 ############
 
 All UA variables are measured such that lower or negative values are good,
