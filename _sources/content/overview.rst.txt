@@ -8,8 +8,7 @@ platform <https://urbananalyst.city>`_:
   properties and relationships with other cities;
 - The |comp-page| compares aggregate statistics for all cities;
 - The |map-page| shows interactive maps for each city;
-- The |transform-page| shows the effect of transforming any chosen city to
-  become more like other cities.
+- The |transform-page| shows how a city can beat transform a selected variable to become more like any other city.
 
 The best place to start is the |summ-page|. The summary for any chosen city
 will indicate which properties of the other pages are most important. Each of
