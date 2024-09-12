@@ -49,3 +49,6 @@ open-source software repositories.
 
    <a href="https://docs.urbananalyst.city/software.html">
    <em>Software and Algorithms</em></a>
+
+Contributions to, or questions regarding, this documentation, are welcome at
+`this GitHub repository <https://github.com/UrbanAnalyst/docs>`_.
