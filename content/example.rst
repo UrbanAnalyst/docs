@@ -358,7 +358,7 @@ inadvertently increasing numbers of transfers.
 Berlin's average relative speed is also notably higher than Paris's, and at
 1.09 likely too high to effectively discourage large numbers of people from
 opting to travel via private automobile. Examination of the map of relative
-travel times clearly reveals the effect of the connected ring out autobahns
+travel times clearly reveals the effect of the connected ring of autobahns
 encircling the city. While reducing speeds on these carriageways may not be
 feasible, a uniform 30km/hour limit as introduced in Paris may nevertheless
 significantly reduce this ratio, and further incentivise many more people to
