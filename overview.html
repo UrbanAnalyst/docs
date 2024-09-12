@@ -1,232 +1,153 @@
-<!DOCTYPE HTML>
-<html lang="en" class="light" dir="ltr">
-    <head>
-        <!-- Book generated using mdBook -->
-        <meta charset="UTF-8">
-        <title>Overview - Urban Analyst</title>
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2. Overview &mdash; urban analyst docs 0.0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
-        <!-- Custom HTML head -->
-        
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff">
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=d45e8c67"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3. Example" href="example.html" />
+    <link rel="prev" title="1. Introduction" href="intro.html" /> 
+</head>
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
-
-        <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
-
-        <!-- Custom theme stylesheets -->
-
-    </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
-
-        <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script>
-            try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
-
-                if (theme.startsWith('"') && theme.endsWith('"')) {
-                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
-                }
-
-                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
-                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
-                }
-            } catch (e) { }
-        </script>
-
-        <!-- Set the theme before any content is loaded, prevents flash -->
-        <script>
-            var theme;
-            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
-            if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
-            html.classList.remove('light')
-            html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
-        </script>
-
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
-
-        <!-- Hide / unhide sidebar before it is displayed -->
-        <script>
-            var body = document.querySelector('body');
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
-            } else {
-                sidebar = 'hidden';
-            }
-            sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
-        </script>
-
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="intro.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="overview.html" class="active"><strong aria-hidden="true">2.</strong> Overview</a></li><li class="chapter-item expanded "><a href="example.html"><strong aria-hidden="true">3.</strong> Example</a></li><li class="chapter-item expanded "><a href="variables.html"><strong aria-hidden="true">4.</strong> UA Variables</a></li><li class="chapter-item expanded "><a href="data.html"><strong aria-hidden="true">5.</strong> Data Sources</a></li><li class="chapter-item expanded "><a href="software.html"><strong aria-hidden="true">6.</strong> Software and Algorithms</a></li></ol>
-            </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
-                <div class="sidebar-resize-indicator"></div>
-            </div>
-        </nav>
-
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
-
-        <div id="page-wrapper" class="page-wrapper">
-
-            <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky">
-                    <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                            <i class="fa fa-bars"></i>
-                        </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                            <i class="fa fa-paint-brush"></i>
-                        </button>
-                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
-                        </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
-
-                    <h1 class="menu-title">Urban Analyst</h1>
-
-                    <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
-                            <i id="print-button" class="fa fa-print"></i>
-                        </a>
-
-                    </div>
-                </div>
-
-                <div id="search-wrapper" class="hidden">
-                    <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
-                    </form>
-                    <div id="searchresults-outer" class="searchresults-outer hidden">
-                        <div id="searchresults-header" class="searchresults-header"></div>
-                        <ul id="searchresults">
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script>
-                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
-                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
-                    });
-                </script>
-
-                <div id="content" class="content">
-                    <main>
-                        <h1 id="overview"><a class="header" href="#overview">Overview</a></h1>
-<p>This chapter provides an overview of the four main pages of the <a href="https://urbananalyst.city">Urban Analyst
-platform</a>:</p>
-<ul>
-<li>The <a href="https://urbananalyst.city/summarise">summarise page</a> provides summary
-overviews for each city of key statistical properties and relationships with
-other cities;</li>
-<li>The <a href="https://urbananalyst.city/compare">compare page</a> compares aggregate
-statistics for all cities;</li>
-<li>The <a href="https://urbananalyst.city/maps">map page</a> shows interactive maps for
-each city;</li>
-<li>The <a href="https://urbananalyst.city/transform">transform page</a> shows the effect of
-transforming any chosen city to become more like other cities.</li>
+          
+          
+          <a href="index.html" class="icon icon-home">
+            urban analyst docs
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">1. Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#summarise">Summarise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">Compare</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#single-and-paired-variables">Single and Paired Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transform">Transform</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#extra-layers">Extra Layers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#output-layer">Output Layer</a></li>
 </ul>
-<p>The best place to start is the <a href="https://urbananalyst.city/summarise">Summarise
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="example.html">3. Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">4. UA Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data.html">5. Data Sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">6. Software and Algorithms</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">urban analyst docs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">2. Overview</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/overview.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="overview">
+<h1>2. Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h1>
+<p>This chapter provides an overview of the four main pages of the <a class="reference external" href="https://urbananalyst.city">Urban Analyst
+platform</a>:</p>
+<ul class="simple">
+<li><p>The <a class="reference external" href="https://urbananalyst.city/summarise">summarise page</a> provides summary
+overviews for each city of key statistical properties and relationships with
+other cities;</p></li>
+<li><p>The <a class="reference external" href="https://urbananalyst.city/compare">compare page</a> compares aggregate
+statistics for all cities;</p></li>
+<li><p>The <a class="reference external" href="https://urbananalyst.city/maps">map page</a> shows interactive maps for
+each city;</p></li>
+<li><p>The <a class="reference external" href="https://urbananalyst.city/transform">transform page</a> shows the effect of
+transforming any chosen city to become more like other cities.</p></li>
+</ul>
+<p>The best place to start is the <a class="reference external" href="https://urbananalyst.city/summarise">Summarise
 page</a>. The summary for any chosen city
 will indicate which properties of the other pages are most important. Each of
-the latter three pages also includes a pop-up "guided tour" explaining the key
+the latter three pages also includes a pop-up “guided tour” explaining the key
 features. These tours will automatically start the first time a page is opened,
-or can be manually opened by clicking on the "Help" button on any of the main
+or can be manually opened by clicking on the “Help” button on any of the main
 pages.</p>
-<hr />
-<h2 id="summarise"><a class="header" href="#summarise">Summarise</a></h2>
-<p>The <a href="https://urbananalyst.city/summarise">Summarise page</a> provides an overview
+<hr class="docutils" />
+<section id="summarise">
+<h2>Summarise<a class="headerlink" href="#summarise" title="Link to this heading"></a></h2>
+<p>The <a class="reference external" href="https://urbananalyst.city/summarise">Summarise page</a> provides an overview
 of the general statistical properties of any chosen UA city. Statistics for
 each chosen city are compared with those for all other cities, and textual
 summaries generated for all statistics which are significantly different.
 Summaries are provided not just for individual statistics, but for the
 strengths of relationship between all pairs of statistics.</p>
-<p>The values described in this initial part of the <a href="https://urbananalyst.city/summarise">Summarise
+<p>The values described in this initial part of the <a class="reference external" href="https://urbananalyst.city/summarise">Summarise
 page</a> indicate which statistics might be
-particularly worth examining in both the
-<a href="https://urbananalyst.city/compare">Compare</a> and the <a href="https://urbananalyst.city/map">Map
-</a> pages.</p>
-<p>The <a href="https://urbananalyst.city/summarise">Summarise page</a> also includes a
-section describing the best "Target city" for each chosen city. As explained
+particularly worth examining in both the <a class="reference external" href="https://urbananalyst.city/compare">Compare</a> and the
+<a class="reference external" href="https://urbananalyst.city/map">Map</a> pages.</p>
+<p>The <a class="reference external" href="https://urbananalyst.city/summarise">Summarise page</a> also includes a
+section describing the best “Target city” for each chosen city. As explained
 there, the best target city is the city which is best in all the ways that the
 chosen city is worse than average. This target city, and corresponding
 variables described there, indicate which cities and variables might be
-particularly worth examining in the <a href="https://urbananalyst.city/transform">Transform
+particularly worth examining in the <a class="reference external" href="https://urbananalyst.city/transform">Transform
 page</a>.</p>
-<hr />
-<h2 id="compare"><a class="header" href="#compare">Compare</a></h2>
-<p>The <a href="https://urbananalyst.city/compare">Compare page</a> enables comparisons
+</section>
+<hr class="docutils" />
+<section id="id6">
+<h2>Compare<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<p>The <a class="reference external" href="https://urbananalyst.city/compare">Compare page</a> enables comparisons
 between all UA cities, both in terms of single variables and relationships
 between any selected pair of variables. A pull-down panel enables each variable
-or "layer" to be selected. The page then displays a graphical representation of
+or “layer” to be selected. The page then displays a graphical representation of
 values of the chosen layer for all cities. As in all UA pages, lower values are
-generally better than higher values. The control panel includes an "Explain
-Layer" button which opens a text panel explaining details of the chosen
+generally better than higher values. The control panel includes an “Explain
+Layer” button which opens a text panel explaining details of the chosen
 variable.</p>
-<h3 id="single-and-paired-variables"><a class="header" href="#single-and-paired-variables">Single and Paired Variables</a></h3>
-<p>The control panel of the <a href="https://urbananalyst.city/compare">compare page</a>
-includes an option to select "paired" variables. The resultant graphs then
+</section>
+<section id="single-and-paired-variables">
+<h2>Single and Paired Variables<a class="headerlink" href="#single-and-paired-variables" title="Link to this heading"></a></h2>
+<p>The control panel of the <a class="reference external" href="https://urbananalyst.city/compare">compare page</a>
+includes an option to select “paired” variables. The resultant graphs then
 display the strength of relationship between any chosen <em>pair</em> of variables.
 For example, choosing social index and the nature index will display the
 strength of relationship between access to natural spaces and social
@@ -236,40 +157,44 @@ mean that lower social disadvantage is coupled with better access to natural
 spaces, while high social disadvantage is coupled with worse access to natural
 spaces. Conversely, a negative relationship would indicate that higher social
 disadvantage was coupled with better access to natural resources. Or, in the
-words brought up by clicking the "Explain Layer" button, "Low values indicate
+words brought up by clicking the “Explain Layer” button, “Low values indicate
 that good access to natural spaces is coupled with disadvantageous social
-conditions."</p>
-<hr />
-<h2 id="map"><a class="header" href="#map">Map</a></h2>
-<p>The <a href="https://urbananalyst.city/map">Map page</a> shows interactive maps for each
+conditions.”</p>
+</section>
+<hr class="docutils" />
+<section id="id9">
+<h2>Map<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+<p>The <a class="reference external" href="https://urbananalyst.city/map">Map page</a> shows interactive maps for each
 city, with values for all UA variables displayed in small polygons. These
 polygons are defined by city-specific assessments of spatial disadvantage.
 Berlin, for example, regularly measures a compound index of social disadvantage
 aggregated into XX polygons. The map for Berlin uses these polygons provided by
 the city to aggregate all measured variables. The variables are described in a
-<a href="./variables.html">subsequent chapter</a>.</p>
-<p>Details of the polygons for each city can be seen by selecting the "Social"
-layer in the Map page and then clicking on the "Explain Layer" button.</p>
+<a class="reference internal" href="variables.html#ua-variables"><span class="std std-ref">subsequent chapter</span></a>.</p>
+<p>Details of the polygons for each city can be seen by selecting the “Social”
+layer in the Map page and then clicking on the “Explain Layer” button.</p>
 <p>As in all UA measurements, lower values of all variables are generally better
 than higher values. Colour scales on all maps thus generally display lower
 values in brighter, yellow colours, while higher values are displayed in
-darker, blue or violet colours. The control panel includes an "Explain Layer"
+darker, blue or violet colours. The control panel includes an “Explain Layer”
 button which opens a text panel explaining details of the chosen variable.</p>
-<hr />
-<h2 id="transform"><a class="header" href="#transform">Transform</a></h2>
-<p>The <a href="https://urbananalyst.city/transform">Transform page</a> enables the
+</section>
+<hr class="docutils" />
+<section id="transform">
+<h2>Transform<a class="headerlink" href="#transform" title="Link to this heading"></a></h2>
+<p>The <a class="reference external" href="https://urbananalyst.city/transform">Transform page</a> enables the
 properties of any chosen city to be transformed to reflect equivalent
-properties of some chosen "target" city. This page is best explained by an
-example. Looking at the <a href="https://urbananalyst.city/compare">Compare page</a> for
-the "bike index" shows that Berlin has relatively poor bicycle infrastructure,
+properties of some chosen “target” city. This page is best explained by an
+example. Looking at the <a class="reference external" href="https://urbananalyst.city/compare">Compare page</a> for
+the “bike index” shows that Berlin has relatively poor bicycle infrastructure,
 while Paris is a very good city for cyclists. The
-<a href="https://urbananalyst.city/transform">Transform page</a> can be used to visualise
+<a class="reference external" href="https://urbananalyst.city/transform">Transform page</a> can be used to visualise
 how Berlin could best transform its current bicycle infrastructure to have an
 overall distribution across the whole city equivalent to Paris. Conversely,
 Paris has poorer access to natural spaces than Berlin, and the page could also
 be used to examine how Paris could best transform its access to natural spaces
 so that it functioned more like Berlin.</p>
-<p>Urban Analyst values displayed in the <a href="https://urbananalyst.city/map">Map page</a>
+<p>Urban Analyst values displayed in the <a class="reference external" href="https://urbananalyst.city/map">Map page</a>
 are aggregated from generally hundreds of thousands of individual calculations
 at every street junction in each city. For the chosen variable, subsets of
 these individual data points are sampled from each city, and the statistical
@@ -279,17 +204,18 @@ target city. These values are then aggregated into the polygons defined for the
 city, to produce a visual representation of the least-cost transformation that
 would be necessary for the city to have the same distribution as that of the
 target city. The transformation algorithm is described in detail in the final
-<a href="./software.html"><em>Software and Algorithms</em> chapter</a>.</p>
-<h3 id="extra-layers"><a class="header" href="#extra-layers">Extra Layers</a></h3>
-<p>The <a href="https://urbananalyst.city/transform">Transform page</a> includes an
+<a class="reference internal" href="software.html#software-and-algorithms"><span class="std std-ref">*Software and Algorithms* chapter</span></a>.</p>
+<section id="extra-layers">
+<h3>Extra Layers<a class="headerlink" href="#extra-layers" title="Link to this heading"></a></h3>
+<p>The <a class="reference external" href="https://urbananalyst.city/transform">Transform page</a> includes an
 additional button labelled <em>Extra Layers</em>. The transformations described above
 described transforming single layers or variables. The <em>Extra Layers</em> panel
 enables transformations not just of single chosen variables, but also of their
-relationships with other variables. Examining the <a href="https://urbananalyst.city/compare">Compare
+relationships with other variables. Examining the <a class="reference external" href="https://urbananalyst.city/compare">Compare
 page</a>, for example, shows that not only does
 Paris provide poorer access to natural spaces than Berlin, but also that Berlin
 has a better relationship between access to natural spaces and social
-disadvantage. (This can be seen by clicking on the "<em>Paired</em>" layer option and
+disadvantage. (This can be seen by clicking on the “<em>Paired</em>” layer option and
 selecting those two layers.) The <em>Extra Layers</em> panel can be used in this case
 to examine not just how Paris might best transform its access to nature to look
 more like Berlin, but also how it might also improve its relationship between
@@ -297,69 +223,55 @@ access to nature and social disadvantage.</p>
 <p>By default, values of <em>Extra Layers</em> are automatically selected as those which
 have better relationships in the chosen target city. These default values will
 thus change for each choice of target city and focal layer. It may be necessary
-to click on the "Reset" button in the <em>Extra Layers</em> panel to update this
+to click on the “Reset” button in the <em>Extra Layers</em> panel to update this
 default selection after changing any of these options.</p>
-<h3 id="output-layer"><a class="header" href="#output-layer">Output Layer</a></h3>
-<p>Finally, the <a href="https://urbananalyst.city/transform">Transform page</a> also has an
+</section>
+<section id="output-layer">
+<h3>Output Layer<a class="headerlink" href="#output-layer" title="Link to this heading"></a></h3>
+<p>Finally, the <a class="reference external" href="https://urbananalyst.city/transform">Transform page</a> also has an
 <em>Output Layer</em> option at the bottom of the control panel. This enables results
 of the transformation algorithm to be displayed in one of four ways:</p>
-<ol>
-<li><em>Original</em> to show original values, prior to transformation;</li>
-<li><em>Transformed</em> to show the actual transformed values;</li>
-<li><em>Absolute</em> to show the absolute value by which each are in the city would
-have to be transformed to match the distribution in the target city; and</li>
-<li><em>Relative</em>, which displays the absolute transformation values relative to
-the original, untransformed values.</li>
+<ol class="arabic simple">
+<li><p><em>Original</em> to show original values, prior to transformation;</p></li>
+<li><p><em>Transformed</em> to show the actual transformed values;</p></li>
+<li><p><em>Absolute</em> to show the absolute value by which each are in the city would
+have to be transformed to match the distribution in the target city; and</p></li>
+<li><p><em>Relative</em>, which displays the absolute transformation values relative to
+the original, untransformed values.</p></li>
 </ol>
-
-                    </main>
-
-                    <nav class="nav-wrapper" aria-label="Page navigation">
-                        <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
-
-                            <a rel="next prefetch" href="example.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-
-                        <div style="clear: both"></div>
-                    </nav>
-                </div>
-            </div>
-
-            <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-
-                    <a rel="next prefetch" href="example.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-            </nav>
-
-        </div>
+</section>
+</section>
+</section>
 
 
-
-
-        <script>
-            window.playground_copyable = true;
-        </script>
-
-
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
-
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
-
-        <!-- Custom JS scripts -->
-
-
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="intro.html" class="btn btn-neutral float-left" title="1. Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="example.html" class="btn btn-neutral float-right" title="3. Example" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-    </body>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Mark Padgham.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
 </html>
