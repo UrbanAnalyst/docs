@@ -1,4 +1,4 @@
-1. Introduction
+Introduction
 ###############
 
 This is the documentation for `Urban Analyst (UA) <https://urbananalyst.city>`_.
@@ -27,7 +27,7 @@ the whole city to have infrastructure equivalent to Paris.
 How does it work?
 *****************
 
-Urban Analyst present a variety of :ref:`variables<4. UA Variables>` for each
+Urban Analyst present a variety of :ref:`variables<UA Variables>` for each
 city analysed, as well as relationships between these variables. Values for
 each variable are derived at every street intersection in each city. These
 values are then aggregated into the polygons shown in the `"Map" page
@@ -36,8 +36,8 @@ values are then aggregated into the polygons shown in the `"Map" page
 values shown in the `"Compare" <https://urbananalyst.city/compare>`_ page.
 Aggregations are always weighted by local population densities, so that all UA
 values represent values *per person* as experienced in each city. Details are
-provided in the :ref:`*Data Sources* <5. Data Sources>` and :ref:`*Software and
-Algorithms* <6. Software and Algorithms>` chapters.
+provided in the :ref:`*Data Sources* <Data Sources>` and :ref:`*Software and
+Algorithms* <Software and Algorithms>` chapters.
 
 How many calculations are involved?
 ***********************************
@@ -109,11 +109,11 @@ Structure
 This documentation includes the following five chapters:
 
 1. This introduction
-2. :ref:`Overview<2. Overview>`: A brief overview of the main components of Urban Analyst.
-3. :ref:`Example<3. Example>`: A walk-through example comparison between Berlin, Germany and Paris, France, illustrating the kinds of comparisons enabled by the Urban Analyst platform.
-4. :ref:`UA Variables<4. UA Variables>`: Providing descriptions of all variables included in the Urban Analyst platform.
-5. :ref:`Data Sources<5. Data Sources>`: Providing descriptions of all data sources used to derive these variables.
-6. :ref:`Software and Algorithms<6. Software and Algorithms>`: Providing descriptions of, and links to, all software used to generate the UA variables.
+2. :ref:`Overview<Overview>`: A brief overview of the main components of Urban Analyst.
+3. :ref:`Example<Example>`: A walk-through example comparison between Berlin, Germany and Paris, France, illustrating the kinds of comparisons enabled by the Urban Analyst platform.
+4. :ref:`UA Variables<UA Variables>`: Providing descriptions of all variables included in the Urban Analyst platform.
+5. :ref:`Data Sources<Data Sources>`: Providing descriptions of all data sources used to derive these variables.
+6. :ref:`Software and Algorithms<Software and Algorithms>`: Providing descriptions of, and links to, all software used to generate the UA variables.
 
 Contributions to, or questions regarding, this documentation, are welcome at
 `this GitHub repository <https://github.com/UrbanAnalyst/docs>`_.

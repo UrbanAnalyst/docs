@@ -12,6 +12,7 @@ This is the documentation of `the Urban Analyst platform
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
    :caption: Contents
 
    intro.rst
