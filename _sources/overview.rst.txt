@@ -1,4 +1,4 @@
-2. Overview
+Overview
 ###########
 
 This chapter provides an overview of the four main pages of the `Urban Analyst
@@ -92,7 +92,7 @@ polygons are defined by city-specific assessments of spatial disadvantage.
 Berlin, for example, regularly measures a compound index of social disadvantage
 aggregated into XX polygons. The map for Berlin uses these polygons provided by
 the city to aggregate all measured variables. The variables are described in a
-:ref:`subsequent chapter<4. UA Variables>`.
+:ref:`subsequent chapter<UA Variables>`.
 
 Details of the polygons for each city can be seen by selecting the "Social"
 layer in the Map page and then clicking on the "Explain Layer" button.
@@ -131,7 +131,7 @@ target city. These values are then aggregated into the polygons defined for the
 city, to produce a visual representation of the least-cost transformation that
 would be necessary for the city to have the same distribution as that of the
 target city. The transformation algorithm is described in detail in the final
-:ref:`*Software and Algorithms* chapter<6. Software and Algorithms>`.
+:ref:`*Software and Algorithms* chapter<Software and Algorithms>`.
 
 Extra Layers
 ============

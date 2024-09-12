@@ -1,4 +1,4 @@
-3. Example
+Example
 ##########
 
 This chapter demonstrates most of the capabilities of the `Urban Analyst

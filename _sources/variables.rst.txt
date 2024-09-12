@@ -1,4 +1,4 @@
-4. UA Variables
+UA Variables
 ###############
 
 All UA variables are measured such that lower or negative values are good,
@@ -22,7 +22,7 @@ explicitly described otherwise, values of all variables are weighted by
 population density. This means that, for example, distances to nearest schools
 represent average distances that each person must travel to get to school. Full
 descriptions of the calculation of all variables are given in the :ref:`*Software
-and Algorithms* chapter<6. Software and Algorithms>`.
+and Algorithms* chapter<Software and Algorithms>`.
 
 Socio-demographic variables
 ***************************

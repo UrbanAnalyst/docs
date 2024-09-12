@@ -1,4 +1,4 @@
-6. Software and Algorithms
+Software and Algorithms
 ##########################
 
 ## Software

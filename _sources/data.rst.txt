@@ -1,4 +1,4 @@
-5. Data Sources
+Data Sources
 ###############
 
 The Urban Analyst platform aims to be applicable to as much of the world as
