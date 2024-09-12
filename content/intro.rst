@@ -30,7 +30,7 @@ How does it work?
 Urban Analyst presents a variety of :ref:`variables<UA Variables>` for each
 city analysed, as well as relationships between these variables. Values for
 each variable are derived at every street intersection in each city. These
-values are then aggregated into the polygons shown in the `"Map" page
+values are then aggregated into the polygons shown in the `"Map"
 <https://urbananalyst.city/maps>`_ and `"Transform"
 <https://urbananalyst.city/transform>`_ pages, and across entire cities for the
 values shown in the `"Compare" <https://urbananalyst.city/compare>`_ page.
