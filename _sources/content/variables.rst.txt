@@ -25,7 +25,7 @@ descriptions of the calculation of all variables are given in the |sw-chapter|.
 
 .. |sw-chapter| raw:: html
 
-   <a href="https://docs.urbananalyst.city/software.html">
+   <a href="https://docs.urbananalyst.city/content/software.html">
    <em>Software and Algorithms</em> chapter</a>
 
 Socio-demographic variables
