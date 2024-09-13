@@ -30,14 +30,37 @@ How does it work?
 Urban Analyst presents a variety of :ref:`variables<UA Variables>` for each
 city analysed, as well as relationships between these variables. Values for
 each variable are derived at every street intersection in each city. These
-values are then aggregated into the polygons shown in the `"Map"
-<https://urbananalyst.city/maps>`_ and `"Transform"
-<https://urbananalyst.city/transform>`_ pages, and across entire cities for the
-values shown in the `"Compare" <https://urbananalyst.city/compare>`_ page.
-Aggregations are always weighted by local population densities, so that all UA
-values represent values *per person* as experienced in each city. Details are
-provided in the :ref:`*Data Sources* <Data Sources>` and :ref:`*Software and
-Algorithms* <Software and Algorithms>` chapters.
+values are then aggregated into the polygons shown in the |map-page-short| and
+|transform-pages|, and across entire cities for the values shown in the
+|comp-page|. Aggregations are always weighted by local population densities, so
+that all UA values represent values *per person* as experienced in each city.
+Details are provided in the |data-chapter-short| and |sw-chapters|.
+
+.. |comp-page| raw:: html
+
+   <a href="https://urbananalyst.city/compare">
+   <em>Compare</em> page</a>
+
+.. |map-page-short| raw:: html
+
+   <a href="https://urbananalyst.city/map">
+   <em>Map</em></a>
+
+.. |transform-pages| raw:: html
+
+   <a href="https://urbananalyst.city/transform">
+   <em>Transform</em> pages</a>
+
+.. |data-chapter-short| raw:: html
+
+   <a href="https://docs.urbananalyst.city/content/data.html">
+   <em>Data Sources</em></a>
+
+.. |sw-chapters| raw:: html
+
+   <a href="https://docs.urbananalyst.city/content/software.html">
+   <em>Software and Algorithms</em> chapters</a>
+
 
 How many calculations are involved?
 ***********************************

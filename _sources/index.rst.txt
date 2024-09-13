@@ -7,7 +7,9 @@ Urban Analyst
 #############
 
 This is the documentation of `the Urban Analyst platform
-<https://urbananalyst.city>`_.
+<https://urbananalyst.city>`_. Contributions to, or questions regarding, this
+documentation, are welcome at `this GitHub repository
+<https://github.com/UrbanAnalyst/docs>`_.
 
 
 .. toctree::
@@ -49,6 +51,3 @@ open-source software repositories.
 
    <a href="https://docs.urbananalyst.city/software.html">
    <em>Software and Algorithms</em></a>
-
-Contributions to, or questions regarding, this documentation, are welcome at
-`this GitHub repository <https://github.com/UrbanAnalyst/docs>`_.
