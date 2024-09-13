@@ -1,7 +1,8 @@
 Software and Algorithms
 ##########################
 
-## Software
+Software
+********
 
 The primary software used to generate the results presented on `Urban Analyst <https://urbananalyst.city>`_ are:
 
