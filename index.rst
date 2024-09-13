@@ -37,17 +37,17 @@ open-source software repositories.
 
 .. |varchapter| raw:: html
 
-   <a href="https://docs.urbananalyst.city/variables.html">
+   <a href="https://docs.urbananalyst.city/content/variables.html">
    <em>UA Variables</em> chapter</a>
 
 
 .. |datachapter| raw:: html
 
-   <a href="https://docs.urbananalyst.city/data.html">
+   <a href="https://docs.urbananalyst.city/content/data.html">
    <em>Data Sources</em></a>
 
 
 .. |swchapter| raw:: html
 
-   <a href="https://docs.urbananalyst.city/software.html">
+   <a href="https://docs.urbananalyst.city/content/software.html">
    <em>Software and Algorithms</em></a>
