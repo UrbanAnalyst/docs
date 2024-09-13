@@ -152,7 +152,7 @@ transformation algorithm is described in detail in the final |sw-chapter|.
 
 .. |sw-chapter| raw:: html
 
-   <a href="https://docs.urbananalyst.city/software.html">
+   <a href="https://docs.urbananalyst.city/content/software.html">
    <em>Software and Algorithms</em> chapter</a>
 
 Extra Layers
